@@ -1,0 +1,534 @@
+/* Trae márgenes por default, hay que sacarlos para que tome todo el ancho y arranque de arriba*/
+body {
+    margin: 0;
+}
+
+/* Tipografías*/
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+h1 {
+    font-family: "DM Sans";
+    font-size: 40px;
+    font-weight: 300;
+    color: #1c3949 
+}
+
+h2 {
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-weight: 300;
+    color: #1c3949 
+}
+
+h3 {
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 400;
+    color: #1c3949 
+}
+
+h4 {
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 500;
+    color: #1c3949 
+}
+
+h5 {
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-weight: 700;
+    color: #1c3949 
+}
+
+h5 {
+    font-family: "DM Sans";
+    font-size: 13px;
+    font-weight: 700;
+    color: #1c3949 
+}
+
+p {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c3949 
+}
+
+/*Header*/
+
+.menu-header {
+    background-color:#EAEDD2 ;
+    height: 10vh;
+    display:flex;
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+.logo-home img {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 500;
+    color: #1c3949;
+    border-right:1px solid #d8d3d3;
+}
+
+/*Main*/
+
+main {
+    height: 60vh;
+
+ 
+    }
+
+
+/*Heros*/
+
+.heroHome {
+    width: 100%;
+    height: 400px;
+    position:relative;/* para fijar cosas encima*/
+    overflow: hidden;
+}
+
+#heroImageHome{
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+}
+
+.heroTitle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 40px;
+    text-align: center; 
+    z-index: 1; 
+
+}
+
+#backgroudVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#heroTitleVideo {
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #ffffff   ; 
+font-size: 40px;
+text-align: center; 
+z-index: 1; 
+}
+
+#heroDescriptionVideo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; 
+    font-size: 20px;
+    text-align: center; 
+    z-index: 1; 
+    }
+
+    .botonHero{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 125px;
+    height: 35px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+    margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
+    color: #ffffff;
+    background-color: #506c64 ;
+    border-radius: 16px;
+    border: 1px solid #506c64 ;
+    box-shadow: none;
+    transform:none;
+    }
+
+    .botonHero:hover{
+    color: #ffffff;
+    background-color: #83ADA2;
+    border-radius: 16px;
+    border: 1px solid #83ADA2;
+    box-shadow: none;
+    transform:none;
+
+    }
+
+.heroHomeUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(60, 108, 116, 0.35);
+    }
+
+    
+#heroTitleUs {
+    color: #1c3949;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#heroDescriptionUs {
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+
+
+
+
+#nosotrosImg {
+    width: 400px;
+    height: 280px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.heroHomeUs h1,
+.heroHomeUs p,
+.heroHomeUs img {
+    margin: 0px;
+}
+
+.heroStore {
+    width: 100%;
+    height: 400px;
+    background-color: #506C64;
+
+    }
+
+
+#heroTitleStore {
+    color: #ffffff;
+    text-align: center;
+    margin: 0px 0 40px 0;
+    padding-top: 40px;
+}
+
+.imgProductos {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 10px 10px 10px 10px;
+}
+
+.filtrosImgStore {
+ display: flex;
+ flex-direction: row;
+ justify-content: center; 
+ align-items: center; 
+ margin: 0 auto;
+}
+
+#bannerCanal {
+    height: auto;
+    width: 100%;
+}
+
+#bannerCanal {
+    text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    align-items: center; 
+    grid-template-areas:
+    "header header header"
+    "paragraph paragraph paragraph"
+    "videos videos videos"
+    ;
+}
+
+#bannerCanal h2 {
+    grid-area: header; 
+}
+
+#bannerCanal p {
+    grid-area: paragraph; 
+}
+
+#bannerCanal_contenedor {
+
+    grid-area: videos;
+    display: flex;
+    justify-content:center; 
+}
+
+.videos {
+    padding: 20px;
+    width: 450px;
+    max-width: 3450px;
+
+}
+
+
+#contactSpace {
+    background-color:#506C64 ;
+    width: 100%;
+    text-align: center;
+
+}
+
+#contactSpaceTitle {
+    color: #ffffff;
+    margin: 0;
+    padding-top: 20px;
+}
+
+#contactSpaceDescription {
+    color: #ffffff;
+
+}
+
+#contenedorHorizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#contactFormDescription {
+    color: #ffffff;
+    text-align: start;
+}
+
+
+.sendButton {
+    width: 125px;
+    height: 35px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #83ADA2;
+    border-radius: 16px;
+    border: 1px solid #83ADA2;
+    box-shadow: none;
+    transform:none;
+    margin-top:10px ;
+}
+
+.sendButton:hover {
+    background-color: #3c6c74  ;
+    border-color: #3c6c74  ;;
+
+}
+
+#containerForm {
+    width: 50%;
+    padding-left: 100px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#containerImg {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contactHeroImg {
+    width:  300px;
+    height: 300px;
+    height: auto;
+    border-radius: 16px;
+    
+
+}
+
+/*Footers*/
+
+footer {
+    height: 30vh;
+
+}
+
+.subscribeBanner{
+    width: 100%;
+    background-color: #1C3949 ;
+    display: flex;
+    justify-content: center; /* vertical*/
+    align-items: center; /*horizontal*/
+
+    
+}
+
+.subsribeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 30px 0;
+}
+
+.subscribeBanner .headerSubscribe {
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+
+
+} 
+
+.subscribeBanner .textoSubscribe {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+} 
+
+.userEmail {
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    width: 300px;
+    height: 30px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+    box-shadow: none;
+    transform:none;
+    margin-top: 10px;
+}
+
+.userName {
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    width: 300px;
+    height: 30px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+    box-shadow: none;
+    transform:none;
+    margin-top: 10px;
+}
+
+
+.userMessage {
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    width: 300px;
+    height: 200px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+    box-shadow: none;
+    transform:none;
+    margin-top: 10px;
+    text-align: start;
+}
+
+
+.subscribeButton {
+    width: 125px;
+    height: 35px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #83ADA2;
+    border-radius: 16px;
+    border: 1px solid #83ADA2;
+    box-shadow: none;
+    transform:none;
+}
+
+.subscribeButton:hover {
+    background-color: #506c64 ;
+    border-color: #506c64 ;;
+
+}
+
+.endFooter {
+    background-color: #EAEDD2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*vertical*/
+    align-items: center; /*horizontal*/
+
+}
+
+
+
+.logo-footer img {
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px 10px 10px ;
+
+
+}
+
+.menuFooter {
+    list-style: none;
+    display: flex;
+}
+
+.menuFooter a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c3949;
+
+}
+
+.logo-rrss img {
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./../assets/styles.css">
+</head>
+
+<body>
+
+    <header class="menu-header">
+    
+        <a class="logo-home" href="./../index.html"><img src="./../assets/images/logos/46827.png" alt="Logo con montañas"></a>
+
+        <nav>
+    
+        <ul class="menu">
+            
+        <li class="navegacion"> <a href="./contenido.html">Contenido</a> </li>
+        <li class="navegacion"> <a href="./nosotros.html">Nosotros</a> </li>
+        <li class="navegacion"> <a href="./tienda.html">Tienda</a> </li>
+        <li class="navegacion"> <a href="./contacto.html">Contacto</a> </li>
+    
+        </ul>
+    
+    </nav>
+    
+    </header>
+   
+<!---acá creo que empiezan los problemas, no sé por qué el form excede el tamaño del contenedor, y el contenedor no se ajusta para darle lugar y desplaza lo demás para abajo, AIUDA, ya no sé queé probar-->
+
+    <main>
+        <section id="contactSpace">
+            <h1 id="contactSpaceTitle"> ¡Contáctate con nosotros!</h1>
+            <p id="contactSpaceDescription">¿Preguntas, colaboraciones o simplemente quieres decir hola? </p>
+
+        <div id="contenedorHorizontal">
+
+            
+            <div id="containerForm">
+                
+                <p id="contactFormDescription">¡Estamos aquí para escucharte!</p>
+               
+                <form>
+               
+                    <input class="userName" name="fieldUserName" type="text" placeholder="Nombre" required>
+               
+                    <input class="userEmail" name="fieldUserEmail" type="email" placeholder="Correo" required>
+               
+                    <input class="userMessage" name="fieldUserMessage" type="textarea" placeholder="Mensaje" required>
+                  
+                    <input class="sendButton" type="submit" value="Enviar">
+               
+                </form>
+
+            </div>
+
+            <div id="containerImg">
+                <img id="contactHeroImg" src="./../assets/images/heros/contactanos.jpg" alt="Reunión en fogata">
+
+
+            </div>
+        </div>
+
+
+        </section>
+
+    </main>
+    
+    <footer>
+
+        <section class="subscribeBanner">
+            <div class="subsribeForm">
+                <h3 class="headerSubscribe">Suscribirse</h3>
+                <p class="textoSubscribe"> ¡Únete a nuestra comunidad para ser el primero en enterarte de nuevos videos, lanzamientos de merchandising y sorpresas especiales!</p>
+                <p class="textoSubscribe">Suscríbete ahora y únete a la aventura.</p>
+                
+                <form>
+                    <input class="userEmail" name="fieldUserEmail" type="email" placeholder="email@ejemplo.com" required>
+                    <input class="subscribeButton" type="submit" value="Suscribirse">
+                </form>
+    
+    
+            </div>
+    
+        </section>
+    
+        <section class="endFooter">
+    
+            <a class="logo-footer" href="./../index.html"><img src="./../assets/images/logos/46827.png" alt="Logo con montañas"></a>
+            
+            <nav>
+    
+                <ul class="menuFooter">
+                    
+                <li class="navegacionFooter"> <a href="./contenido.html">Contenido</a> </li>
+                <li class="navegacionFooter"> <a href="./nosotros.html">Nosotros</a> </li>
+                <li class="navegacionFooter"> <a href="./tienda.html">Tienda</a> </li>
+                <li class="navegacionFooter"> <a href="./contacto.html">Contacto</a> </li>
+            
+                </ul>
+            
+                </nav>
+    
+                <div class="socialMedia">
+                    <a class="logo-rrss" href="https://www.youtube.com/" target="blank"><img src="./../assets/images/logos/youtube.svg" alt="Logo YouTube"></a>
+                    <a class="logo-rrss" href="https://www.instagram.com/" target="blank"><img src="./../assets/images/logos/instagram.svg" alt="Logo Instagram"></a>
+                    <a class="logo-rrss" href="https://twitter.com/" target="blank"><img src="./../assets/images/logos/twitter.svg" alt="Logo Twitter"></a>
+    
+                </div>
+    
+        </section>
+    
+        </footer>
+    </body>
+</html>
