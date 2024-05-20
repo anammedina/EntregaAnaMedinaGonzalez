@@ -232,6 +232,16 @@ p {
         height: 200px;
     }
 
+    .imgPerfiles {
+        width:300px;
+        max-width: 300px;
+        }
+
+    .nosotrosImg {
+            width:300px;
+            max-width:300px;
+            margin: 10px;
+            }
     
     }
 
@@ -335,6 +345,7 @@ z-index: 1;
     color: #ffffff;
     margin-top: 15px;
     margin-bottom: 1px;
+    text-align: center;
 }
 
 
@@ -352,6 +363,12 @@ z-index: 1;
 .heroHomeUs p,
 .heroHomeUs img {
     margin: 0px;
+}
+
+.imgPerfiles {
+    border-radius: 16px;
+    max-width: 450px;
+
 }
 
 .heroStore {
