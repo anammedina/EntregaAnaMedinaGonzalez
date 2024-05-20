@@ -472,15 +472,13 @@ form{
 }
 
 /*Footers*/
-footer {
-    height: 30vh;
-}
+
 .subscribeBanner{
     width: 100%;
     background-color: #1C3949 ;
     display: flex;
-    justify-content: center; /* vertical*/
-    align-items: center; /*horizontal*/
+    justify-content: center; 
+    align-items: center; 
     
 }
 .subsribeForm {
@@ -558,17 +556,19 @@ footer {
     border: 1px solid #83ADA2;
     box-shadow: none;
     transform:none;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .subscribeButton:hover {
     background-color: #506c64 ;
     border-color: #506c64 ;;
 }
+
 .endFooter {
     background-color: #EAEDD2;
     width: 100%;
-    display: flex;
-    justify-content: space-between; /*vertical*/
-    align-items: center; /*horizontal*/
 }
 
 
@@ -578,18 +578,17 @@ footer {
     padding: 10px 10px 10px 10px ;
 
 }
-.menuFooter {
-    list-style: none;
-    display: flex;
-}
-.menuFooter a {
+
+.linkFooter {
     text-decoration: none;
     padding: 10px 15px;
     font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    color: #1c3949;
+    font-size: 14px ;
+    font-weight: 500 ;
+    color: #1c3949 ;
+
 }
+
 .logo-rrss img {
     width: 25px;
     height: 25px;
