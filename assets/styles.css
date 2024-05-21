@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-/* Tipografías*/
+/* -------------Tipografías-------------*/
 
 @font-face {
     font-family: "DM Sans";
@@ -59,7 +59,7 @@ p {
     color: #1c3949 
 }
 
-/*Header*/
+/* -------------Header y Nav -------------*/
 
 .navbar {
     background-color: #EAEDD2 !important;
@@ -84,8 +84,42 @@ p {
 }
 
 
-/*Main*/
+/* ------------- Index / Home page  -------------*/
 
+/* -------- Hero  --------*/
+.heroHome {
+    width: 100%;
+    height: 350px;
+    position:relative;/* para fijar cosas encima*/
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .heroHome {
+        height: 200px;
+    }}
+
+    #heroImageHome{
+ 
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    
+    }
+    
+    .heroTitle {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; 
+        font-size: 40px;
+        text-align: center; 
+        z-index: 1; 
+    
+    }
+
+    /* -------- Banner Intro --------*/
 
     .bannerIntro {
         background-color: #EAEDD2;
@@ -100,6 +134,8 @@ p {
         border-radius: 16px;
         max-width:100%;
     }
+
+    /* -------- Sección Canal  --------*/
 
     #bannerCanal {
         text-align: center; 
@@ -134,20 +170,13 @@ p {
         color: #ffffff;
     }
 
+    /* -------- Sección Nosotros  --------*/
 
     .bannerImgIzq {
         width:100% !important;
         max-width: 100%;
         padding: 2rem 0 0 0;
     }
-
-    .bannerImgDer{
-        width:100% !important;
-        max-width: 100%;
-        padding:  0;
-    }
-
-
 
     .imgContainerIzq {
         background-color: #83ADA2;
@@ -169,6 +198,22 @@ p {
 
     }
 
+    .containerTextBanners {
+        padding: 2rem;
+    }
+
+    .bannersHome {
+        padding-bottom: 1rem;
+    }
+
+
+    /* -------- Sección Merch  --------*/
+
+    .bannerImgDer{
+        width:100% !important;
+        max-width: 100%;
+        padding:  0;
+    }
 
     .imgContainerDer {
         background-color: #3C6C74;
@@ -191,13 +236,6 @@ p {
     }
 
 
-    .containerTextBanners {
-        padding: 2rem;
-    }
-
-    .bannersHome {
-        padding-bottom: 1rem;
-    }
 
     @media (max-width: 992px) {
         .bannersHome {
@@ -223,281 +261,255 @@ p {
     }
 
 
+    /* ------------- Contenido  -------------*/
+
+
+    #backgroudVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #heroTitleVideo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff   ; 
+    font-size: 40px;
+    text-align: center; 
+    z-index: 1; 
+    }
+    
+    #heroDescriptionVideo {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff; 
+        font-size: 20px;
+        text-align: center; 
+        z-index: 1; 
+        }
+    
+        .botonHero{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 125px;
+        height: 35px;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        text-align: center;
+        line-height: 35px;
+        margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
+        color: #ffffff;
+        background-color: #506c64 ;
+        border-radius: 16px;
+        border: 1px solid #506c64 ;
+        box-shadow: none;
+        transform:none;
+        }
+    
+        .botonHero:hover{
+        color: #ffffff;
+        background-color: #83ADA2;
+        border-radius: 16px;
+        border: 1px solid #83ADA2;
+        box-shadow: none;
+        transform:none;
+    
+        }
+
+    /* ------------- Nosotros  -------------*/
+
+    .heroHomeUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(60, 108, 116, 0.35);
+        }
+    
+        
+    #heroTitleUs {
+        color: #1c3949;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    
+    #heroDescriptionUs {
+        color: #ffffff;
+        margin-top: 15px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    
+        
+    #nosotrosImg {
+        width: 400px;
+        height: 280px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+    
+    .heroHomeUs h1,
+    .heroHomeUs p,
+    .heroHomeUs img {
+        margin: 0px;
+    }
+    
+    .imgPerfiles {
+        border-radius: 16px;
+        max-width: 450px;
+    
+    }
+
+    @media (max-width: 768px) {
+
+        .imgPerfiles {
+            width:300px;
+            max-width: 300px;
+        }
+    
+        .nosotrosImg {
+            width:300px;
+            max-width:300px;
+            margin: 10px;
+        }
+    
+    }
+
+
+    /* ------------- Tienda  -------------*/
+
+    .heroStore {
+        width: 100%;
+        height: 400px;
+        background-color: #506C64;
+    
+        }
+    
+    
+    #heroTitleStore {
+        color: #ffffff;
+        text-align: center;
+        margin: 0px 0 40px 0;
+        padding-top: 40px;
+    }
+    
+    .imgProductos {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 16px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .filtrosImgStore {
+     display: flex;
+     flex-direction: row;
+     justify-content: center; 
+     align-items: center; 
+     margin: 0 auto;
+    }
+
+    /* ------------- Contacto  -------------*/
+
+    #contactSpace {
+        background-color:#506C64 ;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px 0;
+    
+    }
+    
+    #contactSpaceTitle, #contactSpaceDescription {
+        color: #ffffff;
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+        "form image";
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 20px;
+    
+    }
+    
+    .contactForm {
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding:20px;
+    }
+    
+    .imgContact {
+        grid-area: image;
+        border-radius: 16px;
+        max-width: 500px;
+        align-items:center;
+    }
+    
+    #contactFormDescription{
+        color: #ffffff;
+    }
+    
+    @media (max-width: 768px) {
+        #grilla {
+            display: grid;
+            grid-template-areas: 
+                "form"
+                "image"; 
+            grid-template-columns: 1fr; 
+        }
+    
+        .imgContact {
+            display: none; 
+        }
+    
+        .contactForm {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    
+    .sendButton {
+        width: 125px;
+        height: 35px;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #83ADA2;
+        border-radius: 16px;
+        border: 1px solid #83ADA2;
+        box-shadow: none;
+        transform:none;
+        margin-top:10px ;
+    }
+    
+    .sendButton:hover {
+        background-color: #3c6c74  ;
+        border-color: #3c6c74  ;;
+    }
+
+
     .sponsors {
         max-height: 100px;
         width: 100px;
 
     }
 
-/*Heros*/
-
-.heroHome {
-    width: 100%;
-    height: 350px;
-    position:relative;/* para fijar cosas encima*/
-    overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    .heroHome {
-        height: 200px;
-    }
-
-    .imgPerfiles {
-        width:300px;
-        max-width: 300px;
-    }
-
-    .nosotrosImg {
-        width:300px;
-        max-width:300px;
-        margin: 10px;
-    }
-
-}
-
-#heroImageHome{
- 
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-
-}
-
-.heroTitle {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 40px;
-    text-align: center; 
-    z-index: 1; 
-
-}
-
-#backgroudVideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#heroTitleVideo {
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: #ffffff   ; 
-font-size: 40px;
-text-align: center; 
-z-index: 1; 
-}
-
-#heroDescriptionVideo {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff; 
-    font-size: 20px;
-    text-align: center; 
-    z-index: 1; 
-    }
-
-    .botonHero{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    width: 125px;
-    height: 35px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    text-align: center;
-    line-height: 35px;
-    margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
-    color: #ffffff;
-    background-color: #506c64 ;
-    border-radius: 16px;
-    border: 1px solid #506c64 ;
-    box-shadow: none;
-    transform:none;
-    }
-
-    .botonHero:hover{
-    color: #ffffff;
-    background-color: #83ADA2;
-    border-radius: 16px;
-    border: 1px solid #83ADA2;
-    box-shadow: none;
-    transform:none;
-
-    }
-
-.heroHomeUs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 400px;
-    background-color: rgba(60, 108, 116, 0.35);
-    }
-
-    
-#heroTitleUs {
-    color: #1c3949;
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-
-#heroDescriptionUs {
-    color: #ffffff;
-    margin-top: 15px;
-    margin-bottom: 1px;
-    text-align: center;
-}
-
-
-
-
-
-#nosotrosImg {
-    width: 400px;
-    height: 280px;
-    border-radius: 16px;
-    object-fit: cover;
-}
-
-.heroHomeUs h1,
-.heroHomeUs p,
-.heroHomeUs img {
-    margin: 0px;
-}
-
-.imgPerfiles {
-    border-radius: 16px;
-    max-width: 450px;
-
-}
-
-.heroStore {
-    width: 100%;
-    height: 400px;
-    background-color: #506C64;
-
-    }
-
-
-#heroTitleStore {
-    color: #ffffff;
-    text-align: center;
-    margin: 0px 0 40px 0;
-    padding-top: 40px;
-}
-
-.imgProductos {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 16px;
-    margin: 10px 10px 10px 10px;
-}
-
-.filtrosImgStore {
- display: flex;
- flex-direction: row;
- justify-content: center; 
- align-items: center; 
- margin: 0 auto;
-}
-
-
-
-
-#contactSpace {
-    background-color:#506C64 ;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px 0;
-
-}
-
-#contactSpaceTitle, #contactSpaceDescription {
-    color: #ffffff;
-    margin: 0;
-    padding-top: 20px;
-}
-
-
-#grilla {
-    display: grid;
-    grid-template-areas: 
-    "form image";
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 20px;
-
-}
-
-.contactForm {
-    grid-area: form;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    padding:20px;
-}
-
-.imgContact {
-    grid-area: image;
-    border-radius: 16px;
-    max-width: 500px;
-    align-items:center;
-}
-
-#contactFormDescription{
-    color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    #grilla {
-        display: grid;
-        grid-template-areas: 
-            "form"
-            "image"; 
-        grid-template-columns: 1fr; 
-    }
-
-    .imgContact {
-        display: none; 
-    }
-
-    .contactForm {
-        width: 100%;
-        padding: 20px;
-    }
-}
-
-.sendButton {
-    width: 125px;
-    height: 35px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: #83ADA2;
-    border-radius: 16px;
-    border: 1px solid #83ADA2;
-    box-shadow: none;
-    transform:none;
-    margin-top:10px ;
-}
-
-.sendButton:hover {
-    background-color: #3c6c74  ;
-    border-color: #3c6c74  ;;
-}
 
 /*Footers*/
 
