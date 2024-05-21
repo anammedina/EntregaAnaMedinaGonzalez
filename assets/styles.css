@@ -215,8 +215,19 @@ p {
         .imgContainer img{
             max-width: 70%;
         }
+
+        .imgContact{
+            max-width: 350px;
+            width:350px;
+        }
     }
 
+
+    .sponsors {
+        max-height: 100px;
+        width: 100px;
+
+    }
 
 /*Heros*/
 
@@ -235,15 +246,15 @@ p {
     .imgPerfiles {
         width:300px;
         max-width: 300px;
-        }
+    }
 
     .nosotrosImg {
-            width:300px;
-            max-width:300px;
-            margin: 10px;
-            }
-    
+        width:300px;
+        max-width:300px;
+        margin: 10px;
     }
+
+}
 
 #heroImageHome{
  
@@ -409,34 +420,64 @@ z-index: 1;
     background-color:#506C64 ;
     width: 100%;
     text-align: center;
+    padding-bottom: 20px 0;
 
 }
 
-#contactSpaceTitle {
+#contactSpaceTitle, #contactSpaceDescription {
     color: #ffffff;
     margin: 0;
     padding-top: 20px;
 }
 
-#contactSpaceDescription {
-    color: #ffffff;
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "form image";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
 
 }
 
-#contenedorHorizontal {
+.contactForm {
+    grid-area: form;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-
+    flex-direction: column;
+    align-items:center;
+    padding:20px;
 }
 
-#contactFormDescription {
+.imgContact {
+    grid-area: image;
+    border-radius: 16px;
+    max-width: 500px;
+    align-items:center;
+}
+
+#contactFormDescription{
     color: #ffffff;
-    text-align: start;
 }
 
+@media (max-width: 768px) {
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+            "form"
+            "image"; 
+        grid-template-columns: 1fr; 
+    }
+
+    .imgContact {
+        display: none; 
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 20px;
+    }
+}
 
 .sendButton {
     width: 125px;
@@ -456,36 +497,6 @@ z-index: 1;
 .sendButton:hover {
     background-color: #3c6c74  ;
     border-color: #3c6c74  ;;
-
-}
-
-#containerForm {
-    width: 50%;
-    padding-left: 100px;
-
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-
-}
-
-#containerImg {
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#contactHeroImg {
-    width:  300px;
-    height: 300px;
-    height: auto;
-    border-radius: 16px;
-    
-
 }
 
 /*Footers*/

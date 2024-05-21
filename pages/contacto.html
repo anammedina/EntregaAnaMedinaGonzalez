@@ -40,43 +40,72 @@
     
     </header>
    
-<!---acá creo que empiezan los problemas, no sé por qué el form excede el tamaño del contenedor, y el contenedor no se ajusta para darle lugar y desplaza lo demás para abajo, AIUDA, ya no sé queé probar-->
 
     <main>
         <section id="contactSpace">
             <h1 id="contactSpaceTitle"> ¡Contáctate con nosotros!</h1>
             <p id="contactSpaceDescription">¿Preguntas, colaboraciones o simplemente quieres decir hola? </p>
 
-        <div id="contenedorHorizontal">
-
-            
-            <div id="containerForm">
-                
-                <p id="contactFormDescription">¡Estamos aquí para escucharte!</p>
-               
-                <form>
-               
-                    <input class="userName" name="fieldUserName" type="text" placeholder="Nombre" required>
+          <div id="grilla">
+            <form class="contactForm">
+              <p id="contactFormDescription">¡Estamos aquí para escucharte!</p>
+              <input class="userName" name="fieldUserName" type="text" placeholder="Nombre" required>
                
                     <input class="userEmail" name="fieldUserEmail" type="email" placeholder="Correo" required>
                
                     <input class="userMessage" name="fieldUserMessage" type="textarea" placeholder="Mensaje" required>
                   
                     <input class="sendButton" type="submit" value="Enviar">
-               
-                </form>
 
-            </div>
+            </form>
 
-            <div id="containerImg">
-                <img id="contactHeroImg" src="./../assets/images/heros/contactanos.jpg" alt="Reunión en fogata">
+            <img class="imgContact" src="./../assets/images/heros/contactanos.jpg" alt="fogata">
 
-
-            </div>
-        </div>
+          </div>
 
 
         </section>
+
+        <section class="bannerImgIzq">
+          <div class="container-fluid">
+           <div class="row align-items-center">
+             <div class="col-lg-6 col-md-12 mb-4 text-center">
+               
+                 <img class="imgPerfiles" src="./../assets/images/contacto/colaboraciones.jpg" alt="Mujer">
+               
+               </div>
+     
+               <div class="col-lg-6 col-md-12 mb-4">
+                 <div class="containerTextBanners">
+                 <p class="bannersHome"> Para consultas relacionadas con negocios, por favor envíanos un correo electrónico a: <b>colaboraciones@senderoscompartidos.com</b> </p>
+
+               </div>
+               </div>
+     
+             </div>
+           </div>
+          </div>
+         </section>
+
+         <div class="logos">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-3 col-md-3 mb-12 text-center mb-4 mb-md-0">
+              <img class="sponsors" src="./../assets/images/logos/patagonia.png" alt="Logo Patagonia">
+             </div>
+
+             <div class="col-lg-3 col-md-3 mb-12 text-center mb-4 mb-md-0">
+              <img class="sponsors" src="./../assets/images/logos/asics.png" alt="Logo Patagonia">
+             </div>
+
+             <div class="col-lg-3 col-md-3 mb-12 text-center mb-4 mb-md-0">
+              <img class="sponsors" src="./../assets/images/logos/dji.png" alt="Logo Patagonia">
+             </div>
+
+            </div>
+          </div>
+
+         </div>
 
     </main>
     
