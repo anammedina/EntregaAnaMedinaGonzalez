@@ -45,7 +45,7 @@ h5 {
     color: #1c3949 
 }
 
-h5 {
+h6 {
     font-family: "DM Sans";
     font-size: 13px;
     font-weight: 700;
@@ -206,6 +206,66 @@ p {
         padding-bottom: 1rem;
     }
 
+    .heroHomeUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 400px;
+        background-color: rgba(60, 108, 116, 0.35);
+        }
+    
+        
+    #heroTitleUs {
+        color: #1c3949;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    
+    #heroDescriptionUs {
+        color: #ffffff;
+        margin-top: 15px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    
+        
+    #nosotrosImg {
+        width: 400px;
+        height: 280px;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+    
+    .heroHomeUs h1,
+    .heroHomeUs p,
+    .heroHomeUs img {
+        margin: 0px;
+    }
+    
+    .imgPerfiles {
+        border-radius: 16px;
+        max-width: 450px;
+    
+    }
+
+    @media (max-width: 768px) {
+
+        .imgPerfiles {
+            width:300px;
+            max-width: 300px;
+        }
+    
+        .nosotrosImg {
+            width:300px;
+            max-width:300px;
+            margin: 10px;
+        }
+    
+    }
+
+
 
     /* -------- Sección Merch  --------*/
 
@@ -323,74 +383,15 @@ p {
     
         }
 
-    /* ------------- Nosotros  -------------*/
-
-    .heroHomeUs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 400px;
-        background-color: rgba(60, 108, 116, 0.35);
-        }
     
-        
-    #heroTitleUs {
-        color: #1c3949;
-        margin-top: 5px;
-        margin-bottom: 0px;
-    }
-    
-    #heroDescriptionUs {
-        color: #ffffff;
-        margin-top: 15px;
-        margin-bottom: 1px;
-        text-align: center;
-    }
-    
-        
-    #nosotrosImg {
-        width: 400px;
-        height: 280px;
-        border-radius: 16px;
-        object-fit: cover;
-    }
-    
-    .heroHomeUs h1,
-    .heroHomeUs p,
-    .heroHomeUs img {
-        margin: 0px;
-    }
-    
-    .imgPerfiles {
-        border-radius: 16px;
-        max-width: 450px;
-    
-    }
-
-    @media (max-width: 768px) {
-
-        .imgPerfiles {
-            width:300px;
-            max-width: 300px;
-        }
-    
-        .nosotrosImg {
-            width:300px;
-            max-width:300px;
-            margin: 10px;
-        }
-    
-    }
-
 
     /* ------------- Tienda  -------------*/
 
     .heroStore {
         width: 100%;
-        height: 400px;
+        height: auto;
         background-color: #506C64;
+        padding-bottom: 20px;
     
         }
     
@@ -399,7 +400,7 @@ p {
         color: #ffffff;
         text-align: center;
         margin: 0px 0 40px 0;
-        padding-top: 40px;
+        padding-top: 30px;
     }
     
     .imgProductos {
@@ -417,6 +418,27 @@ p {
      align-items: center; 
      margin: 0 auto;
     }
+
+    .products {
+        padding:20px 0 40px 0 ;
+
+    }
+
+    .card-img-top{
+        max-height:250px;
+        object-fit: cover;
+
+    }
+
+    @media (max-width: 768px) {
+  
+    .filtrosImgStore {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        margin: 0 auto;
+       } }
 
     /* ------------- Contacto  -------------*/
 
