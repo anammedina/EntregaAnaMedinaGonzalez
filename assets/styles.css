@@ -170,6 +170,8 @@ p {
         color: #ffffff;
     }
 
+
+
     /* -------- Sección Nosotros  --------*/
 
     .bannerImgIzq {
@@ -339,11 +341,12 @@ p {
     font-size: 40px;
     text-align: center; 
     z-index: 1; 
+    padding-bottom: 15px;
     }
     
     #heroDescriptionVideo {
         position: absolute;
-        top: 45%;
+        top: 48%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #ffffff; 
@@ -383,7 +386,100 @@ p {
     
         }
 
+        .nav-pills{
+            padding-top: 10px;
+            padding-bottom: 15px;
+
+        }
+
+        .nav-tabs{
+            align-items: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 90%;
+            background: #000;
+            margin: 20px auto;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media (max-width: 768px) {
+           
+            #heroTitleVideo {
+                position: absolute;
+                top: 20%;
+                font-size: 24px;
+                padding-bottom: 15px;
+                }
+        
+
+        #heroDescriptionVideo {
+            position: absolute;
+            top: 40%;
+            font-size: 15px;
+            }
+
+        .nav-pills{
+        display: none;
     
+            }
+
+        .cardsVideos{
+            display: none;
+        }
+        }
+
+        @media (min-width: 768px) {
+           
+          .nav-tabs {
+            display: none;
+                }
+            
+           #carouselExampleIndicators{
+
+            display: none;
+           }
+
+            
+            }
+        
+
+        @media (max-width: 480px) {
+           
+            #heroTitleVideo {
+                position: absolute;
+                top: 20%;
+                font-size: 24px;
+                padding-bottom: 15px;
+                }
+        
+
+        #heroDescriptionVideo {
+            position: absolute;
+            top: 50%;
+            font-size: 15px;
+            }
+
+            .botonHero{
+                position: absolute;
+                top: 72%;
+                left: 50%;}
+        }
 
     /* ------------- Tienda  -------------*/
 
