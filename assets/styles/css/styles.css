@@ -1,0 +1,675 @@
+@charset "UTF-8";
+/* Trae márgenes por default, hay que sacarlos para que tome todo el ancho y arranque de arriba*/
+body {
+  margin: 0;
+}
+
+/* -------------Tipografías-------------*/
+@font-face {
+  font-family: "DM Sans";
+  src: url(./../../fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+h1 {
+  font-family: "DM Sans";
+  font-size: 40px;
+  font-weight: 300;
+  color: #1c3949;
+}
+
+h2 {
+  font-family: "DM Sans";
+  font-size: 28px;
+  font-weight: 300;
+  color: #1c3949;
+}
+
+h3 {
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 400;
+  color: #1c3949;
+}
+
+h4 {
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-weight: 500;
+  color: #1c3949;
+}
+
+h5 {
+  font-family: "DM Sans";
+  font-size: 15px;
+  font-weight: 700;
+  color: #1c3949;
+}
+
+h6 {
+  font-family: "DM Sans";
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c3949;
+}
+
+p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #1c3949;
+}
+
+.navbar {
+  background-color: #eaedd2 !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  color: #1c3949;
+  border-right: 1px solid #d8d3d3;
+}
+
+/* ------------- Footer  -------------*/
+.subscribeBanner {
+  width: 100%;
+  background-color: #1c3949;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subsribeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.subscribeBanner .headerSubscribe {
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subscribeBanner .textoSubscribe {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.userEmail {
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  width: 300px;
+  height: 30px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  box-shadow: none;
+  transform: none;
+  margin-top: 10px;
+}
+
+.userName {
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  width: 300px;
+  height: 30px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  box-shadow: none;
+  transform: none;
+  margin-top: 10px;
+}
+
+.userMessage {
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  width: 300px;
+  height: 200px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  box-shadow: none;
+  transform: none;
+  margin-top: 10px;
+  text-align: start;
+}
+
+.subscribeButton {
+  width: 125px;
+  height: 35px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #83ada2;
+  border-radius: 16px;
+  border: 1px solid #83ada2;
+  box-shadow: none;
+  transform: none;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribeButton:hover {
+  background-color: #506c64;
+  border-color: #506c64;
+}
+
+.endFooter {
+  background-color: #eaedd2;
+  width: 100%;
+}
+
+.logo-footer img {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+.linkFooter {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c3949;
+}
+
+.logo-rrss img {
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+}
+
+/* ------------- Index / Home page  -------------*/
+/* -------- Hero  --------*/
+.heroHome {
+  width: 100%;
+  height: 350px;
+  position: relative; /* para fijar cosas encima*/
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .heroHome {
+    height: 200px;
+  }
+}
+#heroImageHome {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroTitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* -------- Banner Intro --------*/
+.bannerIntro {
+  background-color: #eaedd2;
+  padding: 1.5rem 0.5rem;
+}
+
+#textBannerIntro {
+  text-align: center;
+}
+
+.imgBannerIntro {
+  border-radius: 16px;
+  max-width: 100%;
+}
+
+/* -------- Sección Canal  --------*/
+#bannerCanal {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 20px;
+  height: auto;
+}
+
+.container {
+  padding-top: 2rem;
+}
+
+.button {
+  width: 125px;
+  height: 35px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #506c64;
+  border-radius: 16px;
+  border: 1px solid #506c64;
+  box-shadow: none;
+  transform: none;
+  text-decoration: none;
+  padding: 12px 20px 12px 20px;
+}
+
+.button:hover {
+  background-color: #83ada2;
+  border-color: #83ada2;
+  color: #ffffff;
+}
+
+/* -------- Sección Nosotros  --------*/
+.bannerImgIzq {
+  width: 100% !important;
+  max-width: 100%;
+  padding: 2rem 0 0 0;
+}
+
+.imgContainerIzq {
+  background-color: #83ada2;
+  border-radius: 16px;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.imgContainerIzq img {
+  border-radius: 16px;
+  padding: 20px 0;
+  max-height: 300px;
+  height: 300px;
+}
+
+.containerTextBanners {
+  padding: 2rem;
+}
+
+.bannersHome {
+  padding-bottom: 1rem;
+}
+
+.heroHomeUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(60, 108, 116, 0.35);
+}
+
+#heroTitleUs {
+  color: #1c3949;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#heroDescriptionUs {
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+#nosotrosImg {
+  width: 400px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.heroHomeUs h1,
+.heroHomeUs p,
+.heroHomeUs img {
+  margin: 0px;
+}
+
+.imgPerfiles {
+  border-radius: 16px;
+  max-width: 450px;
+}
+
+@media (max-width: 768px) {
+  .imgPerfiles {
+    width: 300px;
+    max-width: 300px;
+  }
+  .nosotrosImg {
+    width: 300px;
+    max-width: 300px;
+    margin: 10px;
+  }
+}
+/* -------- Sección Merch  --------*/
+.bannerImgDer {
+  width: 100% !important;
+  max-width: 100%;
+  padding: 0;
+}
+
+.imgContainerDer {
+  background-color: #3c6c74;
+  border-radius: 16px;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.imgContainerDer img {
+  border-radius: 16px;
+  padding: 20px 0;
+  max-height: 300px;
+  height: 300px;
+}
+
+@media (max-width: 992px) {
+  .bannersHome {
+    text-align: center;
+  }
+  .containerTextBanners {
+    text-align: center;
+  }
+  .imgBannerIntro {
+    max-width: 80%;
+  }
+  .imgContainer img {
+    max-width: 70%;
+  }
+  .imgContact {
+    max-width: 350px;
+    width: 350px;
+  }
+}
+/* ------------- Contenido  -------------*/
+#backgroudVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#heroTitleVideo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 15px;
+}
+
+#heroDescriptionVideo {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.botonHero {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 125px;
+  height: 35px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
+  color: #ffffff;
+  background-color: #506c64;
+  border-radius: 16px;
+  border: 1px solid #506c64;
+  box-shadow: none;
+  transform: none;
+}
+
+.botonHero:hover {
+  color: #ffffff;
+  background-color: #83ada2;
+  border-radius: 16px;
+  border: 1px solid #83ada2;
+  box-shadow: none;
+  transform: none;
+}
+
+.nav-pills {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.nav-tabs {
+  align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+  background: #000;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #heroTitleVideo {
+    position: absolute;
+    top: 20%;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  #heroDescriptionVideo {
+    position: absolute;
+    top: 40%;
+    font-size: 15px;
+  }
+  .nav-pills {
+    display: none;
+  }
+  .cardsVideos {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-tabs {
+    display: none;
+  }
+  #carouselExampleIndicators {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  #heroTitleVideo {
+    position: absolute;
+    top: 20%;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  #heroDescriptionVideo {
+    position: absolute;
+    top: 50%;
+    font-size: 15px;
+  }
+  .botonHero {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+  }
+}
+/* ------------- Tienda  -------------*/
+.heroStore {
+  width: 100%;
+  height: auto;
+  background-color: #506c64;
+  padding-bottom: 20px;
+}
+
+#heroTitleStore {
+  color: #ffffff;
+  text-align: center;
+  margin: 0px 0 40px 0;
+  padding-top: 30px;
+}
+
+.imgProductos {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 10px 10px 10px 10px;
+}
+
+.filtrosImgStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.products {
+  padding: 20px 0 40px 0;
+}
+
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .filtrosImgStore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+/* ------------- Contacto  -------------*/
+#contactSpace {
+  background-color: #506c64;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px 0;
+}
+
+#contactSpaceTitle, #contactSpaceDescription {
+  color: #ffffff;
+  margin: 0;
+  padding-top: 20px;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas: "form image";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 20px;
+}
+
+.contactForm {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.imgContact {
+  grid-area: image;
+  border-radius: 16px;
+  max-width: 500px;
+  align-items: center;
+}
+
+#contactFormDescription {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "form" "image";
+    grid-template-columns: 1fr;
+  }
+  .imgContact {
+    display: none;
+  }
+  .contactForm {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.sendButton {
+  width: 125px;
+  height: 35px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #83ada2;
+  border-radius: 16px;
+  border: 1px solid #83ada2;
+  box-shadow: none;
+  transform: none;
+  margin-top: 10px;
+}
+
+.sendButton:hover {
+  background-color: #3c6c74;
+  border-color: #3c6c74;
+}
+
+.sponsors {
+  max-height: 100px;
+  width: 100px;
+}
+
+/*# sourceMappingURL=styles.css.map */

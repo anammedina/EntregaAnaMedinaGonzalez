@@ -1,0 +1,26 @@
+{
+  "name": "tp-final",
+  "version": "1.0.0",
+  "description": "Proyecto para una pareja de YouTubers",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anammedina/PreEntrega2-MedinaGonzalez.git"
+  },
+  "keywords": [
+    "viajes",
+    "aventura",
+    "merch",
+    "videos",
+    "contenido"
+  ],
+  "author": "Ana Medina González",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anammedina/PreEntrega2-MedinaGonzalez/issues"
+  },
+  "homepage": "https://github.com/anammedina/PreEntrega2-MedinaGonzalez#readme"
+}

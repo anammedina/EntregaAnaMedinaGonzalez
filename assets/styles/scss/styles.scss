@@ -3,85 +3,12 @@ body {
     margin: 0;
 }
 
-/* -------------Tipografías-------------*/
 
-@font-face {
-    font-family: "DM Sans";
-    src: url(./fonts/DMSans-VariableFont_opsz\,wght.ttf);
-}
 
-h1 {
-    font-family: "DM Sans";
-    font-size: 40px;
-    font-weight: 300;
-    color: #1c3949 
-}
+@import "tipografias";
+@import "colores";
+@import "navs";
 
-h2 {
-    font-family: "DM Sans";
-    font-size: 28px;
-    font-weight: 300;
-    color: #1c3949 
-}
-
-h3 {
-    font-family: "DM Sans";
-    font-size: 24px;
-    font-weight: 400;
-    color: #1c3949 
-}
-
-h4 {
-    font-family: "DM Sans";
-    font-size: 20px;
-    font-weight: 500;
-    color: #1c3949 
-}
-
-h5 {
-    font-family: "DM Sans";
-    font-size: 15px;
-    font-weight: 700;
-    color: #1c3949 
-}
-
-h6 {
-    font-family: "DM Sans";
-    font-size: 13px;
-    font-weight: 700;
-    color: #1c3949 
-}
-
-p {
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    color: #1c3949 
-}
-
-/* -------------Header y Nav -------------*/
-
-.navbar {
-    background-color: #EAEDD2 !important;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.navbar-brand img {
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
-}
-
-.nav-link {
-    text-decoration: none;
-    padding: 10px 15px;
-    font-family: "DM Sans";
-    font-size: 18px ;
-    font-weight: 500 ;
-    color: #1c3949 ;
-    border-right:1px solid #d8d3d3 ;
-}
 
 
 /* ------------- Index / Home page  -------------*/
@@ -122,7 +49,7 @@ p {
     /* -------- Banner Intro --------*/
 
     .bannerIntro {
-        background-color: #EAEDD2;
+        background-color: $navs;
         padding: 1.5rem 0.5rem;
     }
 
@@ -155,9 +82,9 @@ p {
         font-size: 16px;
         font-weight: 500;
         color: #ffffff;
-        background-color: #506C64;
+        background-color: $dark-green;
         border-radius: 16px;
-        border: 1px solid #506C64;
+        border: 1px solid $dark-green;
         box-shadow: none;
         transform:none;
         text-decoration: none;
@@ -165,8 +92,8 @@ p {
     }
 
     .button:hover {
-        background-color: #83ADA2 ;
-        border-color: #83ADA2 ;
+        background-color: $light-green ;
+        border-color: $light-green ;
         color: #ffffff;
     }
 
@@ -181,7 +108,7 @@ p {
     }
 
     .imgContainerIzq {
-        background-color: #83ADA2;
+        background-color: $light-green;
         border-radius: 16px;
         padding: 2rem 1rem 2rem 1rem;
         display: flex;
@@ -220,7 +147,7 @@ p {
     
         
     #heroTitleUs {
-        color: #1c3949;
+        color: $primary-blue;
         margin-top: 5px;
         margin-bottom: 0px;
     }
@@ -278,7 +205,7 @@ p {
     }
 
     .imgContainerDer {
-        background-color: #3C6C74;
+        background-color: $secondary-blue;
         border-radius: 16px;
         padding: 2rem 1rem 2rem 1rem;
         display: flex;
@@ -369,18 +296,18 @@ p {
         line-height: 35px;
         margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
         color: #ffffff;
-        background-color: #506c64 ;
+        background-color: $dark-green ;
         border-radius: 16px;
-        border: 1px solid #506c64 ;
+        border: 1px solid $dark-green ;
         box-shadow: none;
         transform:none;
         }
     
         .botonHero:hover{
         color: #ffffff;
-        background-color: #83ADA2;
+        background-color: $light-green;
         border-radius: 16px;
-        border: 1px solid #83ADA2;
+        border: 1px solid $light-green;
         box-shadow: none;
         transform:none;
     
@@ -486,7 +413,7 @@ p {
     .heroStore {
         width: 100%;
         height: auto;
-        background-color: #506C64;
+        background-color: $dark-green;
         padding-bottom: 20px;
     
         }
@@ -539,7 +466,7 @@ p {
     /* ------------- Contacto  -------------*/
 
     #contactSpace {
-        background-color:#506C64 ;
+        background-color:$dark-green ;
         width: 100%;
         text-align: center;
         padding-bottom: 20px 0;
@@ -608,17 +535,17 @@ p {
         font-size: 16px;
         font-weight: 500;
         color: #ffffff;
-        background-color: #83ADA2;
+        background-color: $light-green;
         border-radius: 16px;
-        border: 1px solid #83ADA2;
+        border: 1px solid $light-green;
         box-shadow: none;
         transform:none;
         margin-top:10px ;
     }
     
     .sendButton:hover {
-        background-color: #3c6c74  ;
-        border-color: #3c6c74  ;;
+        background-color: $secondary-blue  ;
+        border-color: $secondary-blue ;
     }
 
 
@@ -629,126 +556,5 @@ p {
     }
 
 
-/*Footers*/
-
-.subscribeBanner{
-    width: 100%;
-    background-color: #1C3949 ;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
-}
-.subsribeForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin: 30px 0;
-}
-.subscribeBanner .headerSubscribe {
-    font-family: "DM Sans";
-    font-size: 24px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-
-} 
-.subscribeBanner .textoSubscribe {
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-} 
-.userEmail {
-    border: 1px solid #ffffff;
-    border-radius: 16px;
-    width: 300px;
-    height: 30px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 10px;
-    box-shadow: none;
-    transform:none;
-    margin-top: 10px;
-}
-.userName {
-    border: 1px solid #ffffff;
-    border-radius: 16px;
-    width: 300px;
-    height: 30px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 10px;
-    box-shadow: none;
-    transform:none;
-    margin-top: 10px;
-}
-
-.userMessage {
-    border: 1px solid #ffffff;
-    border-radius: 16px;
-    width: 300px;
-    height: 200px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 10px;
-    box-shadow: none;
-    transform:none;
-    margin-top: 10px;
-    text-align: start;
-}
-
-.subscribeButton {
-    width: 125px;
-    height: 35px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: #83ADA2;
-    border-radius: 16px;
-    border: 1px solid #83ADA2;
-    box-shadow: none;
-    transform:none;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.subscribeButton:hover {
-    background-color: #506c64 ;
-    border-color: #506c64 ;;
-}
-
-.endFooter {
-    background-color: #EAEDD2;
-    width: 100%;
-}
 
 
-.logo-footer img {
-    width: 50px;
-    height: 50px;
-    padding: 10px 10px 10px 10px ;
-
-}
-
-.linkFooter {
-    text-decoration: none;
-    padding: 10px 15px;
-    font-family: "DM Sans";
-    font-size: 14px ;
-    font-weight: 500 ;
-    color: #1c3949 ;
-
-}
-
-.logo-rrss img {
-    width: 25px;
-    height: 25px;
-    padding-right: 10px;
-}
