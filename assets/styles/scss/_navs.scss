@@ -109,11 +109,11 @@
     margin-left: auto;
     margin-right: auto;
 
-}
-.subscribeButton:hover {
-    background-color: $dark-green ;
-    border-color: $dark-green ;
-}
+
+    &:hover {
+     background-color: $dark-green ;
+        border-color: $dark-green ;
+}}
 
 .endFooter {
     background-color: $navs;

@@ -171,7 +171,6 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
 .subscribeButton:hover {
   background-color: #506c64;
   border-color: #506c64;
@@ -262,6 +261,9 @@ p {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 125px;
   height: 35px;
   font-family: "DM Sans";
@@ -275,6 +277,7 @@ p {
   transform: none;
   text-decoration: none;
   padding: 12px 20px 12px 20px;
+  margin-bottom: 10px;
 }
 
 .button:hover {
@@ -354,6 +357,20 @@ p {
 .imgPerfiles {
   border-radius: 16px;
   max-width: 450px;
+}
+
+.merchBanner {
+  width: 80%;
+  border-radius: 16px;
+  background-color: rgba(131, 173, 162, 0.1);
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  margin: 10px auto 30px auto;
+}
+
+.headerMerch {
+  color: #1c3949;
 }
 
 @media (max-width: 768px) {
@@ -498,6 +515,14 @@ p {
   height: 100%;
 }
 
+.imgsContent {
+  border-radius: 16px;
+  max-width: 350px;
+  width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   #heroTitleVideo {
     position: absolute;
@@ -516,12 +541,18 @@ p {
   .cardsVideos {
     display: none;
   }
+  #imgsContentContainer {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .nav-tabs {
     display: none;
   }
   #carouselExampleIndicators {
+    display: none;
+  }
+  #carouselExampleAutoplaying {
     display: none;
   }
 }
