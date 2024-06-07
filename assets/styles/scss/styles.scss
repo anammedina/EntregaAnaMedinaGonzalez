@@ -17,34 +17,26 @@ body {
 .heroHome {
     width: 100%;
     height: 350px;
-    position:relative;/* para fijar cosas encima*/
+    position: relative; /* para fijar cosas encima */
     overflow: hidden;
-}
 
-@media (max-width: 768px) {
-    .heroHome {
-        height: 200px;
-    }}
-
-    #heroImageHome{
- 
+    img {
         width: 100%;
         height: 100%;
-        object-fit: cover; 
-    
+        object-fit: cover;
     }
-    
-    .heroTitle {
+
+    h1 {
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white; 
+        color: white;
         font-size: 40px;
-        text-align: center; 
-        z-index: 1; 
-    
+        text-align: center;
+        z-index: 1;
     }
+}
 
     /* -------- Banner Intro --------*/
 
@@ -66,6 +58,7 @@ body {
 
     #bannerCanal {
         text-align: center; 
+        align-items: center;
         padding-top: 2rem;
         padding-bottom: 20px;
         height: auto;
@@ -87,12 +80,11 @@ body {
         color: #ffffff;
         background-color: $dark-green;
         border-radius: 16px;
-        border: 1px solid $dark-green;
         box-shadow: none;
         transform:none;
         text-decoration: none;
         padding: 12px 20px 12px 20px;
-        margin-bottom: 10px;
+        margin-bottom: 10px !important;
     }
 
     .button:hover {
@@ -123,101 +115,26 @@ body {
 
     }
 
-    .imgContainerIzq img {
+    .imgContainerIzq img,
+    .imgContainerDer img {
         border-radius: 16px;
-        padding: 20px 0;
         max-height: 300px;
         height: 300px;
+        object-fit: cover;
 
     }
+
 
     .containerTextBanners {
         padding: 2rem;
     }
 
-    .bannersHome {
-        padding-bottom: 1rem;
-    }
 
-    .heroHomeUs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 400px;
-        background-color: rgba(60, 108, 116, 0.35);
-        }
-    
-        
-    #heroTitleUs {
-        color: $primary-blue;
-        margin-top: 5px;
-        margin-bottom: 0px;
-    }
-    
-    #heroDescriptionUs {
-        color: #ffffff;
-        margin-top: 15px;
-        margin-bottom: 1px;
-        text-align: center;
-    }
-    
-        
-    #nosotrosImg {
-        width: 400px;
-        height: 280px;
-        border-radius: 16px;
-        object-fit: cover;
-    }
-    
-    .heroHomeUs h1,
-    .heroHomeUs p,
-    .heroHomeUs img {
-        margin: 0px;
-    }
-    
-    .imgPerfiles {
-        border-radius: 16px;
-        max-width: 450px;
-    
-    }
-
-    .merchBanner{
-        width: 80%;
-        border-radius: 16px;
-        background-color: rgba(131, 173, 162, 0.1);
-        align-items: center;
-        text-align: center;
-        padding: 20px 10px 20px 10px;  
-        margin: 10px auto 30px auto;   
-
-    }
-
-    .headerMerch{
-        color: $primary-blue;
-
-    }
-
-
-    @media (max-width: 768px) {
-
-        .imgPerfiles {
-            width:300px;
-            max-width: 300px;
-        }
-    
-        .nosotrosImg {
-            width:300px;
-            max-width:300px;
-            margin: 10px;
-        }
-    
-    }
 
 
 
     /* -------- Sección Merch  --------*/
+
 
     .bannerImgDer{
         width:100% !important;
@@ -237,14 +154,9 @@ body {
 
     }
 
-    .imgContainerDer img {
-        border-radius: 16px;
-        padding: 20px 0;
-        max-height: 300px;
-        height: 300px;
 
-    }
 
+    
 
 
     @media (max-width: 992px) {
@@ -267,6 +179,10 @@ body {
         .imgContact{
             max-width: 350px;
             width:350px;
+        }
+
+        .button {
+        margin: 0 auto;
         }
     }
 
@@ -377,36 +293,67 @@ body {
 
         }
 
+        .dropdown{ 
+         background-color: $navs;
+            a{
+            color: $primary-blue !important;
+            }
+
+        }
+
+        .merchBanner{
+            width: 80%;
+            border-radius: 16px;
+            background-color: rgba(131, 173, 162, 0.1);
+            align-items: center;
+            text-align: center;
+            padding: 20px 10px 20px 10px;  
+            margin: 10px auto 30px auto;   
+    
+        }
+    
+        .headerMerch{
+            color: $primary-blue;
+    
+        }
+
 
         @media (max-width: 768px) {
            
             #heroTitleVideo {
                 position: absolute;
-                top: 20%;
+                top: 40%;
                 font-size: 24px;
                 padding-bottom: 15px;
                 }
         
 
-        #heroDescriptionVideo {
+            #heroDescriptionVideo {
             position: absolute;
-            top: 40%;
+            top: 60%;
             font-size: 15px;
             }
 
-        .nav-pills{
-        display: none;
-    
+            .botonHero{
+                position: absolute;
+                top: 80%;
             }
 
-        .cardsVideos{
-            display: none;
-        }
+            .nav-pills{
+             display: none;
+    
+             }
 
-        #imgsContentContainer{
+             .cardsVideos{
+            display: none;
+             }
+
+            #imgsContentContainer{
             display:none
 
            }
+
+
         }
 
 
@@ -418,9 +365,17 @@ body {
                 }
             
            #carouselExampleIndicators{
-
             display: none;
            }
+
+           #carousel-control-prev{
+            display: none;
+           }
+
+           #carousel-control-next{
+            display: none;
+           }
+
 
            #carouselExampleAutoplaying{
             display: none;
@@ -434,7 +389,7 @@ body {
            
             #heroTitleVideo {
                 position: absolute;
-                top: 20%;
+                top: 40%;
                 font-size: 24px;
                 padding-bottom: 15px;
                 }
@@ -442,17 +397,97 @@ body {
 
         #heroDescriptionVideo {
             position: absolute;
-            top: 50%;
+            top: 60%;
             font-size: 15px;
             }
 
             .botonHero{
                 position: absolute;
-                top: 72%;
+                top: 80%;
                 left: 50%;}
         }
 
+
+    /* ------------- Nosotros  -------------*/
+
+    .bannersHome {
+        padding-bottom: 1rem;
+        word-wrap: break-word;
+    }
+
+    .bannersHome--bold{
+    @extend .bannersHome;
+    font-weight: 700;
+    }
+
+
+    .heroHomeUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: auto;
+        background-color: rgba(60, 108, 116, 0.35);
+        }
+    
+        
+    #heroTitleUs {
+        color: $primary-blue;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    
+    #heroDescriptionUs {
+        color: $primary-blue;
+        margin: 15px 15px;
+        text-align: center;
+    }
+    
+        
+    #nosotrosImg {
+        width: 350px;
+        height: 280px;
+        border-radius: 16px;
+        object-fit: cover;
+        margin: 10px 20px;
+    }
+    
+    .heroHomeUs h1,
+    .heroHomeUs p,
+    .heroHomeUs img {
+        margin: 0px;
+    }
+    
+    .imgPerfiles {
+        border-radius: 16px;
+        max-width: 450px;
+    
+    }
+
+
+
+
+    @media (max-width: 768px) {
+
+        .imgPerfiles {
+            width:300px;
+            max-width: 300px;
+        }
+    
+        .nosotrosImg {
+            width:300px;
+            max-width:300px;
+            margin: 10px;
+        }
+    
+    }
+
+
+
     /* ------------- Tienda  -------------*/
+
+
 
     .heroStore {
         width: 100%;

@@ -63,14 +63,12 @@ p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
-.navbar-brand img {
+.navbar .navbar-brand img {
   width: 50px;
   height: 50px;
   margin-left: 10px;
 }
-
-.nav-link {
+.navbar .nav-link {
   text-decoration: none;
   padding: 10px 15px;
   font-family: "DM Sans";
@@ -81,42 +79,44 @@ p {
 }
 
 /* ------------- Footer  -------------*/
-.subscribeBanner {
+.subscribeBanner, .subscribeBanner--form {
   width: 100%;
   background-color: #1c3949;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+}
+.subscribeBanner .headerSubscribe, .subscribeBanner--form .headerSubscribe, .subscribeBanner .textoSubscribe, .subscribeBanner--form .textoSubscribe {
+  font-family: "DM Sans";
+  color: #ffffff;
+  text-align: center;
+}
+.subscribeBanner .headerSubscribe, .subscribeBanner--form .headerSubscribe {
+  font-size: 24px;
+  font-weight: 400;
+}
+.subscribeBanner .textoSubscribe, .subscribeBanner--form .textoSubscribe {
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.subsribeForm {
+.subscribeBanner--form {
+  padding: 5px 0;
+}
+
+.subscribeForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px 0;
 }
 
-.subscribeBanner .headerSubscribe {
-  font-family: "DM Sans";
-  font-size: 24px;
-  font-weight: 400;
-  color: #ffffff;
-  text-align: center;
-}
-
-.subscribeBanner .textoSubscribe {
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffffff;
-  text-align: center;
-}
-
-.userEmail {
+.userEmail, .userName, .userMessage {
   border: 1px solid #ffffff;
   border-radius: 16px;
   width: 300px;
-  height: 30px;
   font-family: "DM Sans";
   font-size: 16px;
   font-weight: 400;
@@ -126,32 +126,12 @@ p {
   margin-top: 10px;
 }
 
-.userName {
-  border: 1px solid #ffffff;
-  border-radius: 16px;
-  width: 300px;
+.userEmail, .userName {
   height: 30px;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 10px;
-  box-shadow: none;
-  transform: none;
-  margin-top: 10px;
 }
 
 .userMessage {
-  border: 1px solid #ffffff;
-  border-radius: 16px;
-  width: 300px;
   height: 200px;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 10px;
-  box-shadow: none;
-  transform: none;
-  margin-top: 10px;
   text-align: start;
 }
 
@@ -184,7 +164,7 @@ p {
 .logo-footer img {
   width: 50px;
   height: 50px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 .linkFooter {
@@ -197,9 +177,8 @@ p {
 }
 
 .logo-rrss img {
-  width: 25px;
-  height: 25px;
-  padding-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 /* ------------- Index / Home page  -------------*/
@@ -207,24 +186,17 @@ p {
 .heroHome {
   width: 100%;
   height: 350px;
-  position: relative; /* para fijar cosas encima*/
+  position: relative; /* para fijar cosas encima */
   overflow: hidden;
 }
-
-@media (max-width: 768px) {
-  .heroHome {
-    height: 200px;
-  }
-}
-#heroImageHome {
+.heroHome img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.heroTitle {
+.heroHome h1 {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -251,6 +223,7 @@ p {
 /* -------- Sección Canal  --------*/
 #bannerCanal {
   text-align: center;
+  align-items: center;
   padding-top: 2rem;
   padding-bottom: 20px;
   height: auto;
@@ -272,12 +245,11 @@ p {
   color: #ffffff;
   background-color: #506c64;
   border-radius: 16px;
-  border: 1px solid #506c64;
   box-shadow: none;
   transform: none;
   text-decoration: none;
   padding: 12px 20px 12px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 
 .button:hover {
@@ -303,87 +275,18 @@ p {
   height: auto;
 }
 
-.imgContainerIzq img {
+.imgContainerIzq img,
+.imgContainerDer img {
   border-radius: 16px;
-  padding: 20px 0;
   max-height: 300px;
   height: 300px;
+  object-fit: cover;
 }
 
 .containerTextBanners {
   padding: 2rem;
 }
 
-.bannersHome {
-  padding-bottom: 1rem;
-}
-
-.heroHomeUs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 100%;
-  height: 400px;
-  background-color: rgba(60, 108, 116, 0.35);
-}
-
-#heroTitleUs {
-  color: #1c3949;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-#heroDescriptionUs {
-  color: #ffffff;
-  margin-top: 15px;
-  margin-bottom: 1px;
-  text-align: center;
-}
-
-#nosotrosImg {
-  width: 400px;
-  height: 280px;
-  border-radius: 16px;
-  object-fit: cover;
-}
-
-.heroHomeUs h1,
-.heroHomeUs p,
-.heroHomeUs img {
-  margin: 0px;
-}
-
-.imgPerfiles {
-  border-radius: 16px;
-  max-width: 450px;
-}
-
-.merchBanner {
-  width: 80%;
-  border-radius: 16px;
-  background-color: rgba(131, 173, 162, 0.1);
-  align-items: center;
-  text-align: center;
-  padding: 20px 10px 20px 10px;
-  margin: 10px auto 30px auto;
-}
-
-.headerMerch {
-  color: #1c3949;
-}
-
-@media (max-width: 768px) {
-  .imgPerfiles {
-    width: 300px;
-    max-width: 300px;
-  }
-  .nosotrosImg {
-    width: 300px;
-    max-width: 300px;
-    margin: 10px;
-  }
-}
 /* -------- Sección Merch  --------*/
 .bannerImgDer {
   width: 100% !important;
@@ -401,15 +304,8 @@ p {
   height: auto;
 }
 
-.imgContainerDer img {
-  border-radius: 16px;
-  padding: 20px 0;
-  max-height: 300px;
-  height: 300px;
-}
-
 @media (max-width: 992px) {
-  .bannersHome {
+  .bannersHome, .bannersHome--bold {
     text-align: center;
   }
   .containerTextBanners {
@@ -424,6 +320,9 @@ p {
   .imgContact {
     max-width: 350px;
     width: 350px;
+  }
+  .button {
+    margin: 0 auto;
   }
 }
 /* ------------- Contenido  -------------*/
@@ -523,17 +422,42 @@ p {
   object-fit: cover;
 }
 
+.dropdown {
+  background-color: #eaedd2;
+}
+.dropdown a {
+  color: #1c3949 !important;
+}
+
+.merchBanner {
+  width: 80%;
+  border-radius: 16px;
+  background-color: rgba(131, 173, 162, 0.1);
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  margin: 10px auto 30px auto;
+}
+
+.headerMerch {
+  color: #1c3949;
+}
+
 @media (max-width: 768px) {
   #heroTitleVideo {
     position: absolute;
-    top: 20%;
+    top: 40%;
     font-size: 24px;
     padding-bottom: 15px;
   }
   #heroDescriptionVideo {
     position: absolute;
-    top: 40%;
+    top: 60%;
     font-size: 15px;
+  }
+  .botonHero {
+    position: absolute;
+    top: 80%;
   }
   .nav-pills {
     display: none;
@@ -552,6 +476,12 @@ p {
   #carouselExampleIndicators {
     display: none;
   }
+  #carousel-control-prev {
+    display: none;
+  }
+  #carousel-control-next {
+    display: none;
+  }
   #carouselExampleAutoplaying {
     display: none;
   }
@@ -559,19 +489,81 @@ p {
 @media (max-width: 480px) {
   #heroTitleVideo {
     position: absolute;
-    top: 20%;
+    top: 40%;
     font-size: 24px;
     padding-bottom: 15px;
   }
   #heroDescriptionVideo {
     position: absolute;
-    top: 50%;
+    top: 60%;
     font-size: 15px;
   }
   .botonHero {
     position: absolute;
-    top: 72%;
+    top: 80%;
     left: 50%;
+  }
+}
+/* ------------- Nosotros  -------------*/
+.bannersHome, .bannersHome--bold {
+  padding-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.bannersHome--bold {
+  font-weight: 700;
+}
+
+.heroHomeUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  background-color: rgba(60, 108, 116, 0.35);
+}
+
+#heroTitleUs {
+  color: #1c3949;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#heroDescriptionUs {
+  color: #1c3949;
+  margin: 15px 15px;
+  text-align: center;
+}
+
+#nosotrosImg {
+  width: 350px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin: 10px 20px;
+}
+
+.heroHomeUs h1,
+.heroHomeUs p,
+.heroHomeUs img {
+  margin: 0px;
+}
+
+.imgPerfiles {
+  border-radius: 16px;
+  max-width: 450px;
+}
+
+@media (max-width: 768px) {
+  .imgPerfiles {
+    width: 300px;
+    max-width: 300px;
+  }
+  .nosotrosImg {
+    width: 300px;
+    max-width: 300px;
+    margin: 10px;
   }
 }
 /* ------------- Tienda  -------------*/

@@ -2,15 +2,16 @@
     background-color: $navs !important;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
 
-.navbar-brand img {
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
-}
 
-.nav-link {
+    .navbar-brand {
+        img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        }}
+
+    .nav-link {
     text-decoration: none;
     padding: 10px 15px;
     font-family: "DM Sans";
@@ -18,78 +19,68 @@
     font-weight: 500 ;
     color: $primary-blue ;
     border-right:1px solid #d8d3d3 ;
-}
+    }}
+    
 
  /* ------------- Footer  -------------*/
 
-.subscribeBanner{
+ .subscribeBanner {
     width: 100%;
-    background-color: $primary-blue ;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
-}
-.subsribeForm {
+    background-color: $primary-blue;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    .headerSubscribe, .textoSubscribe {
+        font-family: "DM Sans";
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .headerSubscribe {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .textoSubscribe {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.subscribeBanner--form{
+    @extend .subscribeBanner;
+    padding: 5px 0;
+}
+
+.subscribeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 30px 0;
 }
-.subscribeBanner .headerSubscribe {
-    font-family: "DM Sans";
-    font-size: 24px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
 
-} 
-.subscribeBanner .textoSubscribe {
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-} 
-.userEmail {
+.userEmail, .userName, .userMessage {
     border: 1px solid #ffffff;
     border-radius: 16px;
     width: 300px;
-    height: 30px;
     font-family: "DM Sans";
     font-size: 16px;
     font-weight: 400;
     padding-left: 10px;
     box-shadow: none;
-    transform:none;
+    transform: none;
     margin-top: 10px;
 }
-.userName {
-    border: 1px solid #ffffff;
-    border-radius: 16px;
-    width: 300px;
+
+.userEmail, .userName {
     height: 30px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 10px;
-    box-shadow: none;
-    transform:none;
-    margin-top: 10px;
 }
 
 .userMessage {
-    border: 1px solid #ffffff;
-    border-radius: 16px;
-    width: 300px;
     height: 200px;
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 10px;
-    box-shadow: none;
-    transform:none;
-    margin-top: 10px;
     text-align: start;
 }
 
@@ -104,16 +95,17 @@
     border-radius: 16px;
     border: 1px solid $light-green;
     box-shadow: none;
-    transform:none;
+    transform: none;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 
-
     &:hover {
-     background-color: $dark-green ;
-        border-color: $dark-green ;
-}}
+        background-color: $dark-green;
+        border-color: $dark-green;
+    }
+}
+
 
 .endFooter {
     background-color: $navs;
@@ -124,7 +116,7 @@
 .logo-footer img {
     width: 50px;
     height: 50px;
-    padding: 10px 10px 10px 10px ;
+    padding: 10px;
 
 }
 
@@ -139,7 +131,10 @@
 }
 
 .logo-rrss img {
-    width: 25px;
-    height: 25px;
-    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+    
 }
+
+
+
