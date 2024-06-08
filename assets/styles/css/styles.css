@@ -181,20 +181,44 @@ p {
   height: 20px;
 }
 
+.button, .heroHome--contenido a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 35px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #506c64;
+  border-radius: 16px;
+  box-shadow: none;
+  transform: none;
+  text-decoration: none;
+  padding: 12px 20px 12px 20px;
+  margin-bottom: 10px !important;
+}
+.button.button:hover, .heroHome--contenido a:hover {
+  background-color: #83ada2;
+  border-color: #83ada2;
+  color: #ffffff;
+}
+
 /* ------------- Index / Home page  -------------*/
 /* -------- Hero  --------*/
-.heroHome {
+.heroHome, .heroHome--contenido {
   width: 100%;
   height: 350px;
   position: relative; /* para fijar cosas encima */
   overflow: hidden;
 }
-.heroHome img {
+.heroHome img, .heroHome--contenido img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.heroHome h1 {
+.heroHome h1, .heroHome--contenido h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -210,8 +234,7 @@ p {
   background-color: #eaedd2;
   padding: 1.5rem 0.5rem;
 }
-
-#textBannerIntro {
+.bannerIntro p {
   text-align: center;
 }
 
@@ -233,39 +256,16 @@ p {
   padding-top: 2rem;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 125px;
-  height: 35px;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffffff;
-  background-color: #506c64;
-  border-radius: 16px;
-  box-shadow: none;
-  transform: none;
-  text-decoration: none;
-  padding: 12px 20px 12px 20px;
-  margin-bottom: 10px !important;
-}
-
-.button:hover {
-  background-color: #83ada2;
-  border-color: #83ada2;
-  color: #ffffff;
-}
-
-/* -------- Sección Nosotros  --------*/
-.bannerImgIzq {
+/* -------- banners --------*/
+.bannerImgIzq,
+.bannerImgDer {
   width: 100% !important;
   max-width: 100%;
   padding: 2rem 0 0 0;
 }
 
-.imgContainerIzq {
+.imgContainerIzq,
+.imgContainerDer {
   background-color: #83ada2;
   border-radius: 16px;
   padding: 2rem 1rem 2rem 1rem;
@@ -287,23 +287,6 @@ p {
   padding: 2rem;
 }
 
-/* -------- Sección Merch  --------*/
-.bannerImgDer {
-  width: 100% !important;
-  max-width: 100%;
-  padding: 0;
-}
-
-.imgContainerDer {
-  background-color: #3c6c74;
-  border-radius: 16px;
-  padding: 2rem 1rem 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
 @media (max-width: 992px) {
   .bannersHome, .bannersHome--bold {
     text-align: center;
@@ -321,18 +304,17 @@ p {
     max-width: 350px;
     width: 350px;
   }
-  .button {
+  .button, .heroHome--contenido a {
     margin: 0 auto;
   }
 }
 /* ------------- Contenido  -------------*/
-#backgroudVideo {
+.heroHome--contenido video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-#heroTitleVideo {
+.heroHome--contenido h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -343,8 +325,7 @@ p {
   z-index: 1;
   padding-bottom: 15px;
 }
-
-#heroDescriptionVideo {
+.heroHome--contenido p {
   position: absolute;
   top: 48%;
   left: 50%;
@@ -354,35 +335,11 @@ p {
   text-align: center;
   z-index: 1;
 }
-
-.botonHero {
+.heroHome--contenido a {
   position: absolute;
   top: 60%;
   left: 50%;
-  width: 125px;
-  height: 35px;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  text-align: center;
-  line-height: 35px;
   margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
-  color: #ffffff;
-  background-color: #506c64;
-  border-radius: 16px;
-  border: 1px solid #506c64;
-  box-shadow: none;
-  transform: none;
-}
-
-.botonHero:hover {
-  color: #ffffff;
-  background-color: #83ada2;
-  border-radius: 16px;
-  border: 1px solid #83ada2;
-  box-shadow: none;
-  transform: none;
 }
 
 .nav-pills {
@@ -405,7 +362,6 @@ p {
   background: #000;
   margin: 20px auto;
 }
-
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -438,8 +394,7 @@ p {
   padding: 20px 10px 20px 10px;
   margin: 10px auto 30px auto;
 }
-
-.headerMerch {
+.merchBanner h3 {
   color: #1c3949;
 }
 
@@ -522,15 +477,14 @@ p {
   width: 100%;
   height: auto;
   background-color: rgba(60, 108, 116, 0.35);
+  padding: 20px 0;
 }
-
-#heroTitleUs {
+.heroHomeUs h1 {
   color: #1c3949;
   margin-top: 5px;
   margin-bottom: 0px;
 }
-
-#heroDescriptionUs {
+.heroHomeUs p {
   color: #1c3949;
   margin: 15px 15px;
   text-align: center;
@@ -542,12 +496,6 @@ p {
   border-radius: 16px;
   object-fit: cover;
   margin: 10px 20px;
-}
-
-.heroHomeUs h1,
-.heroHomeUs p,
-.heroHomeUs img {
-  margin: 0px;
 }
 
 .imgPerfiles {
@@ -573,15 +521,13 @@ p {
   background-color: #506c64;
   padding-bottom: 20px;
 }
-
-#heroTitleStore {
+.heroStore h1 {
   color: #ffffff;
   text-align: center;
   margin: 0px 0 40px 0;
   padding-top: 30px;
 }
-
-.imgProductos {
+.heroStore img {
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -622,8 +568,8 @@ p {
   text-align: center;
   padding-bottom: 20px 0;
 }
-
-#contactSpaceTitle, #contactSpaceDescription {
+#contactSpace h1,
+#contactSpace p {
   color: #ffffff;
   margin: 0;
   padding-top: 20px;

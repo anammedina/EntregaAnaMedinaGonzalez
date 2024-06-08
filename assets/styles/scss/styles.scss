@@ -1,639 +1,496 @@
 /* Trae márgenes por default, hay que sacarlos para que tome todo el ancho y arranque de arriba*/
 body {
-    margin: 0;
+  margin: 0;
 }
-
-
 
 @import "tipografias";
 @import "colores";
 @import "navs";
 
-
-
 /* ------------- Index / Home page  -------------*/
 
 /* -------- Hero  --------*/
 .heroHome {
+  width: 100%;
+  height: 350px;
+  position: relative; /* para fijar cosas encima */
+  overflow: hidden;
+
+  img {
     width: 100%;
-    height: 350px;
-    position: relative; /* para fijar cosas encima */
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 40px;
-        text-align: center;
-        z-index: 1;
-    }
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+  }
 }
 
-    /* -------- Banner Intro --------*/
+/* -------- Banner Intro --------*/
 
-    .bannerIntro {
-        background-color: $navs;
-        padding: 1.5rem 0.5rem;
-    }
+.bannerIntro {
+  background-color: $navs;
+  padding: 1.5rem 0.5rem;
 
-    #textBannerIntro {
-        text-align: center;
-    }
+  p {
+    text-align: center;
+  }
+}
 
-    .imgBannerIntro {
-        border-radius: 16px;
-        max-width:100%;
-    }
+.imgBannerIntro {
+  border-radius: 16px;
+  max-width: 100%;
+}
 
-    /* -------- Sección Canal  --------*/
+/* -------- Sección Canal  --------*/
 
-    #bannerCanal {
-        text-align: center; 
-        align-items: center;
-        padding-top: 2rem;
-        padding-bottom: 20px;
-        height: auto;
-    }
+#bannerCanal {
+  text-align: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 20px;
+  height: auto;
+}
 
-    .container {
-        padding-top: 2rem;
-    }
+.container {
+  padding-top: 2rem;
+}
 
-    .button {
-        display: flex;              
-        align-items: center;         
-        justify-content: center;
-        width: 125px;
-        height: 35px;
-        font-family: "DM Sans";
-        font-size: 16px;
-        font-weight: 500;
-        color: #ffffff;
-        background-color: $dark-green;
-        border-radius: 16px;
-        box-shadow: none;
-        transform:none;
-        text-decoration: none;
-        padding: 12px 20px 12px 20px;
-        margin-bottom: 10px !important;
-    }
+/* -------- banners --------*/
 
-    .button:hover {
-        background-color: $light-green ;
-        border-color: $light-green ;
-        color: #ffffff;
-    }
+.bannerImgIzq,
+.bannerImgDer {
+  width: 100% !important;
+  max-width: 100%;
+  padding: 2rem 0 0 0;
+}
 
+.imgContainerIzq,
+.imgContainerDer {
+  background-color: $light-green;
+  border-radius: 16px;
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
 
+.imgContainerIzq img,
+.imgContainerDer img {
+  border-radius: 16px;
+  max-height: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
-    /* -------- Sección Nosotros  --------*/
+.containerTextBanners {
+  padding: 2rem;
+}
 
-    .bannerImgIzq {
-        width:100% !important;
-        max-width: 100%;
-        padding: 2rem 0 0 0;
-    }
+@media (max-width: 992px) {
+  .bannersHome {
+    text-align: center;
+  }
 
-    .imgContainerIzq {
-        background-color: $light-green;
-        border-radius: 16px;
-        padding: 2rem 1rem 2rem 1rem;
-        display: flex;
-        justify-content:center ;
-        align-items: center;
-        height: auto;
-    
+  .containerTextBanners {
+    text-align: center;
+  }
 
-    }
+  .imgBannerIntro {
+    max-width: 80%;
+  }
 
-    .imgContainerIzq img,
-    .imgContainerDer img {
-        border-radius: 16px;
-        max-height: 300px;
-        height: 300px;
-        object-fit: cover;
+  .imgContainer img {
+    max-width: 70%;
+  }
 
-    }
+  .imgContact {
+    max-width: 350px;
+    width: 350px;
+  }
 
+  .button {
+    margin: 0 auto;
+  }
+}
 
-    .containerTextBanners {
-        padding: 2rem;
-    }
+/* ------------- Contenido  -------------*/
 
+.heroHome--contenido {
+  @extend .heroHome;
 
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-
-
-    /* -------- Sección Merch  --------*/
-
-
-    .bannerImgDer{
-        width:100% !important;
-        max-width: 100%;
-        padding:  0;
-    }
-
-    .imgContainerDer {
-        background-color: $secondary-blue;
-        border-radius: 16px;
-        padding: 2rem 1rem 2rem 1rem;
-        display: flex;
-        justify-content:center ;
-        align-items: center;
-        height: auto;
-    
-
-    }
-
-
-
-    
-
-
-    @media (max-width: 992px) {
-        .bannersHome {
-            text-align: center;
-        }
-       
-        .containerTextBanners {
-            text-align: center;
-        }
-
-        .imgBannerIntro {
-            max-width:80%
-        }
-
-        .imgContainer img{
-            max-width: 70%;
-        }
-
-        .imgContact{
-            max-width: 350px;
-            width:350px;
-        }
-
-        .button {
-        margin: 0 auto;
-        }
-    }
-
-
-    /* ------------- Contenido  -------------*/
-
-
-    #backgroudVideo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    #heroTitleVideo {
+  h1 {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff   ; 
+    color: #ffffff;
     font-size: 40px;
-    text-align: center; 
-    z-index: 1; 
+    text-align: center;
+    z-index: 1;
     padding-bottom: 15px;
-    }
-    
-    #heroDescriptionVideo {
-        position: absolute;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #ffffff; 
-        font-size: 20px;
-        text-align: center; 
-        z-index: 1; 
-        }
-    
-        .botonHero{
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        width: 125px;
-        height: 35px;
-        font-family: "DM Sans";
-        font-size: 16px;
-        font-weight: 500;
-        text-decoration: none;
-        text-align: center;
-        line-height: 35px;
-        margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
-        color: #ffffff;
-        background-color: $dark-green ;
-        border-radius: 16px;
-        border: 1px solid $dark-green ;
-        box-shadow: none;
-        transform:none;
-        }
-    
-        .botonHero:hover{
-        color: #ffffff;
-        background-color: $light-green;
-        border-radius: 16px;
-        border: 1px solid $light-green;
-        box-shadow: none;
-        transform:none;
-    
-        }
+  }
 
-        .nav-pills{
-            padding-top: 10px;
-            padding-bottom: 15px;
+  p {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+  }
 
-        }
+  a {
+    @extend .button;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
+  }
+}
 
-        .nav-tabs{
-            align-items: center;
-            align-items: center;
-            text-align: center;
+.nav-pills {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
 
-        }
+.nav-tabs {
+  align-items: center;
+  align-items: center;
+  text-align: center;
+}
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 90%;
-            background: #000;
-            margin: 20px auto;
-        }
-        
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+  background: #000;
+  margin: 20px auto;
 
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
+.imgsContent {
+  border-radius: 16px;
+  max-width: 350px;
+  width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
 
-        .imgsContent {
-            border-radius: 16px;
-            max-width: 350px;
-            width: 350px;
-            max-height: 150px;
-            object-fit: cover;
-            
+.dropdown {
+  background-color: $navs;
+  a {
+    color: $primary-blue !important;
+  }
+}
 
-        }
+.merchBanner {
+  width: 80%;
+  border-radius: 16px;
+  background-color: rgba(131, 173, 162, 0.1);
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  margin: 10px auto 30px auto;
+    h3 {
+    color: $primary-blue;
+}}
 
-        .dropdown{ 
-         background-color: $navs;
-            a{
-            color: $primary-blue !important;
-            }
+@media (max-width: 768px) {
+  #heroTitleVideo {
+    position: absolute;
+    top: 40%;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
 
-        }
+  #heroDescriptionVideo {
+    position: absolute;
+    top: 60%;
+    font-size: 15px;
+  }
 
-        .merchBanner{
-            width: 80%;
-            border-radius: 16px;
-            background-color: rgba(131, 173, 162, 0.1);
-            align-items: center;
-            text-align: center;
-            padding: 20px 10px 20px 10px;  
-            margin: 10px auto 30px auto;   
-    
-        }
-    
-        .headerMerch{
-            color: $primary-blue;
-    
-        }
+  .botonHero {
+    position: absolute;
+    top: 80%;
+  }
 
+  .nav-pills {
+    display: none;
+  }
 
-        @media (max-width: 768px) {
-           
-            #heroTitleVideo {
-                position: absolute;
-                top: 40%;
-                font-size: 24px;
-                padding-bottom: 15px;
-                }
-        
+  .cardsVideos {
+    display: none;
+  }
 
-            #heroDescriptionVideo {
-            position: absolute;
-            top: 60%;
-            font-size: 15px;
-            }
+  #imgsContentContainer {
+    display: none;
+  }
+}
 
-            .botonHero{
-                position: absolute;
-                top: 80%;
-            }
+@media (min-width: 768px) {
+  .nav-tabs {
+    display: none;
+  }
 
-            .nav-pills{
-             display: none;
-    
-             }
+  #carouselExampleIndicators {
+    display: none;
+  }
 
-             .cardsVideos{
-            display: none;
-             }
+  #carousel-control-prev {
+    display: none;
+  }
 
-            #imgsContentContainer{
-            display:none
+  #carousel-control-next {
+    display: none;
+  }
 
-           }
+  #carouselExampleAutoplaying {
+    display: none;
+  }
+}
 
+@media (max-width: 480px) {
+  #heroTitleVideo {
+    position: absolute;
+    top: 40%;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
 
-        }
+  #heroDescriptionVideo {
+    position: absolute;
+    top: 60%;
+    font-size: 15px;
+  }
 
+  .botonHero {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  }
+}
 
+/* ------------- Nosotros  -------------*/
 
-        @media (min-width: 768px) {
-           
-          .nav-tabs {
-            display: none;
-                }
-            
-           #carouselExampleIndicators{
-            display: none;
-           }
+.bannersHome {
+  padding-bottom: 1rem;
+  word-wrap: break-word;
+}
 
-           #carousel-control-prev{
-            display: none;
-           }
+.bannersHome--bold {
+  @extend .bannersHome;
+  font-weight: 700;
+}
 
-           #carousel-control-next{
-            display: none;
-           }
+.heroHomeUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  background-color: rgba(60, 108, 116, 0.35);
+  padding: 20px 0;
 
-
-           #carouselExampleAutoplaying{
-            display: none;
-           }
-
-            
-            }
-        
-
-        @media (max-width: 480px) {
-           
-            #heroTitleVideo {
-                position: absolute;
-                top: 40%;
-                font-size: 24px;
-                padding-bottom: 15px;
-                }
-        
-
-        #heroDescriptionVideo {
-            position: absolute;
-            top: 60%;
-            font-size: 15px;
-            }
-
-            .botonHero{
-                position: absolute;
-                top: 80%;
-                left: 50%;}
-        }
-
-
-    /* ------------- Nosotros  -------------*/
-
-    .bannersHome {
-        padding-bottom: 1rem;
-        word-wrap: break-word;
-    }
-
-    .bannersHome--bold{
-    @extend .bannersHome;
-    font-weight: 700;
-    }
-
-
-    .heroHomeUs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: auto;
-        background-color: rgba(60, 108, 116, 0.35);
-        }
-    
-        
-    #heroTitleUs {
-        color: $primary-blue;
-        margin-top: 5px;
-        margin-bottom: 0px;
-    }
-    
-    #heroDescriptionUs {
-        color: $primary-blue;
-        margin: 15px 15px;
-        text-align: center;
-    }
-    
-        
-    #nosotrosImg {
-        width: 350px;
-        height: 280px;
-        border-radius: 16px;
-        object-fit: cover;
-        margin: 10px 20px;
-    }
-    
-    .heroHomeUs h1,
-    .heroHomeUs p,
-    .heroHomeUs img {
-        margin: 0px;
-    }
-    
-    .imgPerfiles {
-        border-radius: 16px;
-        max-width: 450px;
-    
-    }
-
-
-
-
-    @media (max-width: 768px) {
-
-        .imgPerfiles {
-            width:300px;
-            max-width: 300px;
-        }
-    
-        .nosotrosImg {
-            width:300px;
-            max-width:300px;
-            margin: 10px;
-        }
-    
-    }
-
-
-
-    /* ------------- Tienda  -------------*/
-
-
-
-    .heroStore {
-        width: 100%;
-        height: auto;
-        background-color: $dark-green;
-        padding-bottom: 20px;
-    
-        }
-    
-    
-    #heroTitleStore {
-        color: #ffffff;
-        text-align: center;
-        margin: 0px 0 40px 0;
-        padding-top: 30px;
-    }
-    
-    .imgProductos {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 16px;
-        margin: 10px 10px 10px 10px;
-    }
-    
-    .filtrosImgStore {
-     display: flex;
-     flex-direction: row;
-     justify-content: center; 
-     align-items: center; 
-     margin: 0 auto;
-    }
-
-    .products {
-        padding:20px 0 40px 0 ;
-
-    }
-
-    .card-img-top{
-        max-height:250px;
-        object-fit: cover;
-
-    }
-
-    @media (max-width: 768px) {
+  h1 {
+    color: $primary-blue;
+    margin-top: 5px;
+    margin-bottom: 0px;
+      }
   
-    .filtrosImgStore {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
-        margin: 0 auto;
-       } }
+      p {
+    color: $primary-blue;
+    margin: 15px 15px;
+    text-align: center;
+      }}
 
-    /* ------------- Contacto  -------------*/
-
-    #contactSpace {
-        background-color:$dark-green ;
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px 0;
-    
-    }
-    
-    #contactSpaceTitle, #contactSpaceDescription {
-        color: #ffffff;
-        margin: 0;
-        padding-top: 20px;
-    }
-    
-    
-    #grilla {
-        display: grid;
-        grid-template-areas: 
-        "form image";
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        padding: 20px;
-    
-    }
-    
-    .contactForm {
-        grid-area: form;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        padding:20px;
-    }
-    
-    .imgContact {
-        grid-area: image;
-        border-radius: 16px;
-        max-width: 500px;
-        align-items:center;
-    }
-    
-    #contactFormDescription{
-        color: #ffffff;
-    }
-    
-    @media (max-width: 768px) {
-        #grilla {
-            display: grid;
-            grid-template-areas: 
-                "form"
-                "image"; 
-            grid-template-columns: 1fr; 
-        }
-    
-        .imgContact {
-            display: none; 
-        }
-    
-        .contactForm {
-            width: 100%;
-            padding: 20px;
-        }
-    }
-    
-    .sendButton {
-        width: 125px;
-        height: 35px;
-        font-family: "DM Sans";
-        font-size: 16px;
-        font-weight: 500;
-        color: #ffffff;
-        background-color: $light-green;
-        border-radius: 16px;
-        border: 1px solid $light-green;
-        box-shadow: none;
-        transform:none;
-        margin-top:10px ;
-    }
-    
-    .sendButton:hover {
-        background-color: $secondary-blue  ;
-        border-color: $secondary-blue ;
-    }
-
-
-    .sponsors {
-        max-height: 100px;
-        width: 100px;
-
-    }
+#nosotrosImg {
+  width: 350px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin: 10px 20px;
+}
 
 
 
+.imgPerfiles {
+  border-radius: 16px;
+  max-width: 450px;
+}
 
+@media (max-width: 768px) {
+  .imgPerfiles {
+    width: 300px;
+    max-width: 300px;
+  }
+
+  .nosotrosImg {
+    width: 300px;
+    max-width: 300px;
+    margin: 10px;
+  }
+}
+
+/* ------------- Tienda  -------------*/
+
+.heroStore {
+  width: 100%;
+  height: auto;
+  background-color: $dark-green;
+  padding-bottom: 20px;
+  
+  h1{
+  color: #ffffff;
+  text-align: center;
+  margin: 0px 0 40px 0;
+  padding-top: 30px;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 10px 10px 10px 10px;
+}}
+
+.filtrosImgStore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.products {
+  padding: 20px 0 40px 0;
+}
+
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .filtrosImgStore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+/* ------------- Contacto  -------------*/
+
+#contactSpace {
+  background-color: $dark-green;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px 0;
+
+ h1,
+ p {
+  color: #ffffff;
+  margin: 0;
+  padding-top: 20px;
+}}
+
+#grilla {
+  display: grid;
+  grid-template-areas: "form image";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 20px;
+}
+
+.contactForm {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.imgContact {
+  grid-area: image;
+  border-radius: 16px;
+  max-width: 500px;
+  align-items: center;
+}
+
+#contactFormDescription {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "form"
+      "image";
+    grid-template-columns: 1fr;
+  }
+
+  .imgContact {
+    display: none;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.sendButton {
+  width: 125px;
+  height: 35px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: $light-green;
+  border-radius: 16px;
+  border: 1px solid $light-green;
+  box-shadow: none;
+  transform: none;
+  margin-top: 10px;
+}
+
+.sendButton:hover {
+  background-color: $secondary-blue;
+  border-color: $secondary-blue;
+}
+
+.sponsors {
+  max-height: 100px;
+  width: 100px;
+}
