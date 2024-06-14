@@ -113,10 +113,11 @@ p {
   margin: 30px 0;
 }
 
-.userEmail, .userName, .userMessage {
+.inputFields, .inputFields--message, .inputFields--email,
+.inputFields--name {
   border: 1px solid #ffffff;
   border-radius: 16px;
-  width: 300px;
+  width: 400px;
   font-family: "DM Sans";
   font-size: 16px;
   font-weight: 400;
@@ -126,11 +127,12 @@ p {
   margin-top: 10px;
 }
 
-.userEmail, .userName {
-  height: 30px;
+.inputFields--email,
+.inputFields--name {
+  height: 40px;
 }
 
-.userMessage {
+.inputFields--message {
   height: 200px;
   text-align: start;
 }
@@ -259,15 +261,14 @@ p {
 /* -------- banners --------*/
 .bannerImgIzq,
 .bannerImgDer {
-  width: 100% !important;
-  max-width: 100%;
+  width: 80% !important;
+  max-width: 80%;
   padding: 2rem 0 0 0;
+  margin: 0 auto;
 }
 
 .imgContainerIzq,
 .imgContainerDer {
-  background-color: #83ada2;
-  border-radius: 16px;
   padding: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -283,8 +284,21 @@ p {
   object-fit: cover;
 }
 
+.imgContainerIzq img {
+  border: 20px solid #3c6c74;
+}
+
+.imgContainerDer img {
+  border: 20px solid #506c64;
+}
+
 .containerTextBanners {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 992px) {

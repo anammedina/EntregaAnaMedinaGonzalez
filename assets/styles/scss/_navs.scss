@@ -62,10 +62,10 @@
     margin: 30px 0;
 }
 
-.userEmail, .userName, .userMessage {
+.inputFields{
     border: 1px solid #ffffff;
     border-radius: 16px;
-    width: 300px;
+    width: 400px;
     font-family: "DM Sans";
     font-size: 16px;
     font-weight: 400;
@@ -73,16 +73,22 @@
     box-shadow: none;
     transform: none;
     margin-top: 10px;
+
 }
 
-.userEmail, .userName {
-    height: 30px;
+.inputFields--email,
+.inputFields--name {
+    @extend .inputFields;
+    height: 40px;
 }
 
-.userMessage {
+.inputFields--message {
+    @extend .inputFields;
     height: 200px;
     text-align: start;
 }
+
+
 
 .subscribeButton {
     width: 125px;

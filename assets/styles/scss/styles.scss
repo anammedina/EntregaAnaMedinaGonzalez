@@ -68,15 +68,14 @@ body {
 
 .bannerImgIzq,
 .bannerImgDer {
-  width: 100% !important;
-  max-width: 100%;
+  width: 80% !important;
+  max-width: 80%;
   padding: 2rem 0 0 0;
+  margin: 0 auto;
 }
 
 .imgContainerIzq,
 .imgContainerDer {
-  background-color: $light-green;
-  border-radius: 16px;
   padding: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -92,8 +91,23 @@ body {
   object-fit: cover;
 }
 
+.imgContainerIzq img {
+  border: 20px solid $secondary-blue;
+
+}
+
+.imgContainerDer img {
+  border: 20px solid $dark-green;
+
+}
+
 .containerTextBanners {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -438,6 +452,9 @@ img {
   align-items: center;
   padding: 20px;
 }
+
+
+
 
 .imgContact {
   grid-area: image;
