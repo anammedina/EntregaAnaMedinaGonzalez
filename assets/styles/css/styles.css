@@ -207,6 +207,13 @@ p {
   color: #ffffff;
 }
 
+@media (max-width: 840px) {
+  .inputFields, .inputFields--email,
+  .inputFields--name, .inputFields--message {
+    width: 300px;
+    margin: 5px;
+  }
+}
 /* ------------- Index / Home page  -------------*/
 /* -------- Hero  --------*/
 .heroHome, .heroHome--contenido {
@@ -239,8 +246,7 @@ p {
 .bannerIntro p {
   text-align: center;
 }
-
-.imgBannerIntro {
+.bannerIntro img {
   border-radius: 16px;
   max-width: 100%;
 }
@@ -275,7 +281,6 @@ p {
   align-items: center;
   height: auto;
 }
-
 .imgContainerIzq img,
 .imgContainerDer img {
   border-radius: 16px;
@@ -328,7 +333,7 @@ p {
   height: 100%;
   object-fit: cover;
 }
-.heroHome--contenido h1 {
+.heroHome--contenido #heroTitleVideo {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -339,9 +344,9 @@ p {
   z-index: 1;
   padding-bottom: 15px;
 }
-.heroHome--contenido p {
+.heroHome--contenido #heroDescriptionVideo {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
@@ -351,7 +356,7 @@ p {
 }
 .heroHome--contenido a {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
 }
@@ -364,6 +369,10 @@ p {
 .nav-tabs {
   align-items: center;
   text-align: center;
+}
+
+.videoScroll {
+  width: 20rem;
 }
 
 .video-container {
@@ -412,28 +421,24 @@ p {
 }
 
 @media (max-width: 768px) {
-  #heroTitleVideo {
-    position: absolute;
-    top: 40%;
-    font-size: 24px;
-    padding-bottom: 15px;
+  .heroHome--contenido #heroTitleVideo {
+    top: 35%;
+    width: 100%;
   }
-  #heroDescriptionVideo {
-    position: absolute;
+  .heroHome--contenido #heroDescriptionVideo {
     top: 60%;
-    font-size: 15px;
+    width: 100%;
   }
-  .botonHero {
-    position: absolute;
+  .heroHome--contenido a {
     top: 80%;
   }
-  .nav-pills {
+  .heroHome--contenido .nav-pills {
     display: none;
   }
-  .cardsVideos {
+  .heroHome--contenido .cardsVideos {
     display: none;
   }
-  #imgsContentContainer {
+  .heroHome--contenido #imgsContentContainer {
     display: none;
   }
 }
@@ -453,28 +458,19 @@ p {
   #carouselExampleAutoplaying {
     display: none;
   }
-}
-@media (max-width: 480px) {
-  #heroTitleVideo {
-    position: absolute;
-    top: 40%;
-    font-size: 24px;
-    padding-bottom: 15px;
+  .imgPerfiles {
+    width: 100%;
+    max-width: 300px;
   }
-  #heroDescriptionVideo {
-    position: absolute;
-    top: 60%;
-    font-size: 15px;
-  }
-  .botonHero {
-    position: absolute;
-    top: 80%;
-    left: 50%;
+  .containerTextBanners {
+    text-align: center;
+    margin-top: 20px;
   }
 }
 /* ------------- Nosotros  -------------*/
 .bannersHome, .bannersHome--bold {
   padding-bottom: 1rem;
+  margin: 5px;
   word-wrap: break-word;
 }
 
@@ -514,6 +510,7 @@ p {
 .imgPerfiles {
   border-radius: 16px;
   max-width: 450px;
+  margin: 5px;
 }
 
 @media (max-width: 768px) {
@@ -627,6 +624,12 @@ p {
   .contactForm {
     width: 100%;
     padding: 20px;
+  }
+}
+@media (min-width: 990px) and (max-width: 1024px) {
+  .imgPerfiles {
+    max-width: 70%;
+    width: 70%;
   }
 }
 .sendButton {

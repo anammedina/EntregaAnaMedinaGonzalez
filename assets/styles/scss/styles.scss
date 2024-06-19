@@ -43,11 +43,11 @@ body {
   p {
     text-align: center;
   }
-}
 
-.imgBannerIntro {
+  img {
   border-radius: 16px;
   max-width: 100%;
+}
 }
 
 /* -------- Sección Canal  --------*/
@@ -81,14 +81,13 @@ body {
   justify-content: center;
   align-items: center;
   height: auto;
-}
 
-.imgContainerIzq img,
-.imgContainerDer img {
-  border-radius: 16px;
-  max-height: 300px;
-  height: 300px;
-  object-fit: cover;
+    img  {
+    border-radius: 16px;
+    max-height: 300px;
+    height: 300px;
+    object-fit: cover;
+}
 }
 
 .imgContainerIzq img {
@@ -137,6 +136,7 @@ body {
   }
 }
 
+
 /* ------------- Contenido  -------------*/
 
 .heroHome--contenido {
@@ -148,7 +148,7 @@ body {
     object-fit: cover;
   }
 
-  h1 {
+  #heroTitleVideo {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -158,11 +158,11 @@ body {
     text-align: center;
     z-index: 1;
     padding-bottom: 15px;
-  }
+    }
 
-  p {
+  #heroDescriptionVideo {
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
@@ -170,11 +170,12 @@ body {
     text-align: center;
     z-index: 1;
   }
+    
 
   a {
     @extend .button;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     margin-left: -62.5px; /* para que se termine de centrar el botón... no parece la mejor práctica*/
   }
@@ -188,6 +189,10 @@ body {
 .nav-tabs {
   align-items: center;
   text-align: center;
+}
+
+.videoScroll{
+  width: 20rem
 }
 
 .video-container {
@@ -235,25 +240,26 @@ body {
     color: $primary-blue;
 }}
 
+
 @media (max-width: 768px) {
-  #heroTitleVideo {
-    position: absolute;
-    top: 40%;
-    font-size: 24px;
-    padding-bottom: 15px;
-  }
 
-  #heroDescriptionVideo {
-    position: absolute;
-    top: 60%;
-    font-size: 15px;
-  }
+  .heroHome--contenido {
+   
+    #heroTitleVideo {
+      top: 35%;
+      width: 100%;
+      }
+  
+    #heroDescriptionVideo {
+      top: 60%;
+      width: 100%;
 
-  .botonHero {
-    position: absolute;
-    top: 80%;
-  }
-
+    }
+        
+    a {
+      top: 80%;   
+    }
+  
   .nav-pills {
     display: none;
   }
@@ -265,6 +271,7 @@ body {
   #imgsContentContainer {
     display: none;
   }
+}
 }
 
 @media (min-width: 768px) {
@@ -287,33 +294,28 @@ body {
   #carouselExampleAutoplaying {
     display: none;
   }
-}
 
-@media (max-width: 480px) {
-  #heroTitleVideo {
-    position: absolute;
-    top: 40%;
-    font-size: 24px;
-    padding-bottom: 15px;
+
+ .imgPerfiles {
+    width: 100%;
+    max-width: 300px;
   }
 
-  #heroDescriptionVideo {
-    position: absolute;
-    top: 60%;
-    font-size: 15px;
-  }
-
-  .botonHero {
-    position: absolute;
-    top: 80%;
-    left: 50%;
+  .containerTextBanners {
+    text-align: center;
+    margin-top: 20px;
   }
 }
+
+
+
+
 
 /* ------------- Nosotros  -------------*/
 
 .bannersHome {
   padding-bottom: 1rem;
+  margin: 5px;
   word-wrap: break-word;
 }
 
@@ -357,6 +359,7 @@ body {
 .imgPerfiles {
   border-radius: 16px;
   max-width: 450px;
+  margin:5px;
 }
 
 @media (max-width: 768px) {
@@ -484,7 +487,18 @@ img {
     width: 100%;
     padding: 20px;
   }
+
 }
+
+
+@media (min-width: 990px) and (max-width: 1024px) {
+ 
+  .imgPerfiles {
+    max-width: 70%;
+    width: 70%;
+  }
+  }
+
 
 .sendButton {
   width: 125px;
