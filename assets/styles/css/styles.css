@@ -432,13 +432,13 @@ p {
   .heroHome--contenido a {
     top: 80%;
   }
-  .heroHome--contenido .nav-pills {
+  .nav-pills {
     display: none;
   }
-  .heroHome--contenido .cardsVideos {
+  .cardsVideos {
     display: none;
   }
-  .heroHome--contenido #imgsContentContainer {
+  #imgsContentContainer {
     display: none;
   }
 }
