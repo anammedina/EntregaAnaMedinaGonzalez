@@ -271,10 +271,22 @@ body {
   #imgsContentContainer {
     display: none;
   }
+
+  #heroVideoContent{
+    display: none;
+  }
+
 }
 
 
 @media (min-width: 768px) {
+
+  #heroImgContent{
+    display: none;
+
+  }
+
+
   .nav-tabs {
     display: none;
   }
@@ -322,6 +334,8 @@ body {
 .bannersHome--bold {
   @extend .bannersHome;
   font-weight: 700;
+  margin: 2px;
+  word-wrap: break-word;
 }
 
 .heroHomeUs {
@@ -373,6 +387,7 @@ body {
     max-width: 300px;
     margin: 10px;
   }
+
 }
 
 /* ------------- Tienda  -------------*/
@@ -453,7 +468,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  margin: 5px;
 }
 
 

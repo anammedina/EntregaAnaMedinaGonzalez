@@ -441,8 +441,14 @@ p {
   #imgsContentContainer {
     display: none;
   }
+  #heroVideoContent {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
+  #heroImgContent {
+    display: none;
+  }
   .nav-tabs {
     display: none;
   }
@@ -476,6 +482,8 @@ p {
 
 .bannersHome--bold {
   font-weight: 700;
+  margin: 2px;
+  word-wrap: break-word;
 }
 
 .heroHomeUs {
@@ -598,7 +606,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  margin: 5px;
 }
 
 .imgContact {
